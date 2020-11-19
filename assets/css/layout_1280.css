@@ -1,0 +1,45 @@
+@media screen and (max-width:1280px){
+
+/*	all	*/
+.container { max-width:100%; }
+
+/*	header	*/
+header .inner_wrapper { padding:0 32px; }
+header .inner_wrapper .gnbWrap > ul.gnb { left: calc(50% - 380px);width: calc(50% - -85px); }
+header .inner_wrapper .gnbWrap > ul.gnb > li { width:20%; }
+header .inner_wrapper .gnbWrap > ul.gnb > li > ,
+header .inner_wrapper .gnbWrap > ul.gnb > li > a{font-size:18px}
+header .inner_wrapper .gnbWrap > ul.gnb > li > p + ul > li > p a{font-size:14px}
+/* header .inner_wrapper .gnbWrap > ul.gnb > li > p + ul	{ margin-top:-10px; } */
+
+header .inner_wrapper .gnbWrap > ul.gnb > li > p + ul > li > p a { font-size:13px; padding:10px 0; }
+header .inner_wrapper .servicesWrap .searchWrap .searchContainer .inputWrap {padding:0 10px}
+
+/* footer */
+footer .inner_wrapper { max-width:none; font-size:16px; }
+footer .inner_wrapper a img { height:0.8em; margin-left:0.3em; margin-top:-1px; }
+footer .inner_wrapper ul.gnb > li { padding:0 10px; }
+footer .inner_wrapper ul.gnb > li > p{font-size:17px}
+footer .inner_wrapper .footerMenuWrap .familysiteWrap { float:right;width:196px }
+footer .inner_wrapper .footerMenuWrap .familysiteWrap .selectForm .familyLink li{font-size:13px}
+/*	content	*/
+#content .inner_wrapper	{width:100%; }
+
+.hassticky2 #content {padding-top:88px}
+.hassticky2 #content .menuContainer{height:88px;top:0;}
+.intro.hassticky2 #content .menuContainer{position:relative;border-top:none}
+.intro.hassticky2 #content .menuContainer.fixed{position:fixed;border-top:1px solid #ebebeb}
+.hassticky2 #content .menuContainer.fixed{top:64px;left:0;}
+.intro.hassticky2.clearFix #content .menuContainer.fixed{top:64px;left:0;}
+.intro.hassticky2.sc.clearFix .header_submenu, .intro.sc.clearFix .header_submenu{height:64px}
+.hassticky2.clearFix #content .menuContainer.fixed{top:0;left:0;}
+.hassticky2 #content .menuContainer ul.swiper-wrapper{justify-content:flex-start;padding:0 30px}
+/* .hassticky2 #content .menuContainer li.swiper-slide{padding:32px 20px;margin:0}
+.hassticky2 #content .menuContainer li.swiper-slide + li.swiper-slide{margin-left:37px} */
+.hassticky2 #content .menuContainer li.swiper-slide{padding:0;margin:0}
+.hassticky2 #content .menuContainer li.swiper-slide a{display:block;padding:32px 20px;}
+.hassticky2 #content .menuContainer li.swiper-slide + li.swiper-slide{padding-left:37px}
+.hassticky2 #content .menuContainer li:after{display:none}
+
+
+}

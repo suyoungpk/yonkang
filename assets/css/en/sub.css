@@ -1,0 +1,272 @@
+
+
+@import url(../common.css);
+@import url(../layout.css);
+@import url(../layout_1280.css);
+@import url(../layout_1080.css);
+@import url(../layout_766.css);
+@import url(../swiper.min.css);
+
+@import url(../story.css);
+@import url(../history.css);
+@import url(../ci.css);
+@import url(../business.css);
+@import url(../news.css);
+@import url(../help.css); /*help, extra*/
+
+
+/* layout */
+header .inner_wrapper .servicesWrap .logo_yk{height:20px}
+header .inner_wrapper .servicesWrap .selectForm p{width:90px}
+header .inner_wrapper .gnbWrap > ul.gnb > li{width:196px}
+@media screen and (max-width:1400px){
+    header .inner_wrapper .gnbWrap > ul.gnb > li{width:20%}
+}
+@media screen and (max-width:1080px){
+    header .inner_wrapper .logoWrap .logo_yk{height:15px}
+}
+@media screen and (max-width:359px){
+    header .inner_wrapper .logoWrap .logo_yk{height:auto;width:140px}
+    .visual-con .con .tit{letter-spacing:-1px}
+}
+/* sub common */
+.kr_{display:none}
+.en_{display:block}
+
+.cw.ct,
+.cw{display:block !important}
+.cw.ct.btn-area,
+.cw.btn-area{display:flex !important}
+.ct,.cp{display:none !important}
+
+/* .btn-black{width:180px;height:55px;line-height:53px;text-align:center;border:1px solid #000;background:#000;font-size:16px;color:#fff;letter-spacing:-1px}
+.btn-black-line{width:180px;height:55px;line-height:53px;text-align:center;border:1px solid #333;font-size:16px;color:#444;letter-spacing:-1px}
+
+.btn-blue{width:200px;height:55px;line-height:53px;text-align:center;border:1px solid #0590e1;background:#0590e1;font-size:18px;color:#fff;letter-spacing:-0.04em}
+.btn-blue-line{width:200px;height:55px;line-height:53px;text-align:center;border:1px solid #0590e1;color:#0590e1;font-size:18px;letter-spacing:-0.04em}
+ */
+ .btn-black{text-align:center;border:1px solid #000;background:#000;color:#fff}
+ .btn-black:hover{background:#0590e1;border-color:#0590e1}
+ .btn-black-line{text-align:center;border:1px solid #000;background:#fff;color:#000}
+ .btn-black-line:hover{background:#000;color:#fff}
+ /* .btn-blue{width:200px;height:55px;line-height:53px;text-align:center;border:1px solid #0590e1;background:#0590e1;font-size:18px;color:#fff;letter-spacing:-0.04em}
+ .btn-blue-line{width:200px;height:55px;line-height:53px;text-align:center;border:1px solid #0590e1;color:#0590e1;font-size:18px;letter-spacing:-0.04em}
+  */
+.btn-area{display:flex;justify-content: center;flex-wrap: wrap;flex-direction: row;}
+.btn-area.left{justify-content: flex-start}
+.btn-area .btn + .btn{margin-left:20px}
+
+.btn.fix{width:200px;height:56px;line-height:54px;font-size:18px;letter-spacing:-0.04em}
+.btn.flow{padding:0 24px;height:56px;line-height:54px;font-size:18px;letter-spacing:-0.04em}
+.btn.hasicon{padding:0 24px;height:56px;line-height:54px;font-size:18px;letter-spacing:-0.04em}
+.btn.hasicon::after{display:inline-block;width:18px;height:18px;margin-left:10px;vertical-align:middle;content:"";background-repeat:no-repeat;background-size:cover;}
+
+/* .btn-download::after{margin-left:9px;display:inline-block;width:12px;height:12px;vertical-align:middle;content:"";background:url(../../images/ico-download.png) no-repeat 0 0/cover}
+.btn-download2::after{margin-left:15px;display:inline-block;width:20px;height:19px;vertical-align:middle;content:"";background:url(../../images/ico-download2.png) no-repeat 0 0/cover}
+.btn-txt-arr::after{margin-left:19px;display:inline-block;width:8px;height:12px;vertical-align:middle;content:"";background:url(../../images/ico-arr.gif) no-repeat 0 0/cover}
+.btn-outlink::after{margin-left:11px;display:inline-block;width:12px;height:12px;vertical-align:middle;content:"";background:url(../../images/ico-btn-outlink.png) no-repeat 0 0/cover}
+.btn-plus::after{margin-left:16px;display:inline-block;width:16px;height:16px;vertical-align:middle;content:"";background:url(../../images/ico-plus.gif) no-repeat 0 0/cover}
+.btn-more::after{margin-top:-2px;margin-left:20px;display:inline-block;width:13px;height:8px;vertical-align:middle;content:"";background:url(../../images/ico-more.png) no-repeat 0 0/cover}*/
+.ico-outlink::after{margin-left:10px;display:inline-block;width:15px;height:15px;vertical-align:middle;content:"";background:url(../../images/ico-outlink.png) no-repeat 0 0/contain} 
+.btn.hasicon.btn-download::after{background-image:url(../../images/ico-download-b.png)}
+.btn.hasicon.btn-txt-arr::after{background-image:url(../../images/ico-arr-b.png)}
+.btn.hasicon.btn-outlink::after{background-image:url(../../images/ico-btn-outlink-b.png)}
+.btn.hasicon.btn-plus::after{background-image:url(../../images/ico-plus-b.png)}
+.btn.hasicon.btn-more::after{background-image:url(../../images/ico-more-b.png)}
+
+.btn.hasicon.btn-download:hover::after{background-image:url(../../images/ico-download-w.png)}
+.btn.hasicon.btn-txt-arr:hover::after{background-image:url(../../images/ico-arr-w.png)}
+.btn.hasicon.btn-outlink:hover::after{background-image:url(../../images/ico-btn-outlink-w.png)}
+.btn.hasicon.btn-plus:hover::after{background-image:url(../../images/ico-plus-w.png)}
+.btn.hasicon.btn-more:hover::after{background-image:url(../../images/ico-more-w.png)}
+
+.scroll{background-size:auto 100%;background-repeat: no-repeat;}
+.scroll .btn{position:absolute;top:0;left:50%;width:37px;transform: translate(-50%,0);}
+.scroll .btn:focus{outline:none;border:0}
+.scroll.step1{background-image:url(../../images/ico-scroll1.png)}
+.scroll.step2{background-image:url(../../images/ico-scroll2.png)}
+.scroll.step3{background-image:url(../../images/ico-scroll3.png)}
+.scroll.step4{background-image:url(../../images/ico-scroll4.png)}
+.scroll .btn.prev{display:none}
+.scroll .btn.next{display:block;top:0;height:100%}
+.scroll.mid.step1{background-image:url(../../images/ico-scroll3_1.png)}
+.scroll.mid.step2{background-image:url(../../images/ico-scroll3_2.png)}
+.scroll.mid.step3{background-image:url(../../images/ico-scroll3_3.png)}
+.scroll.mid.step4{background-image:url(../../images/ico-scroll3_4.png)}
+.scroll.mid .btn.prev{display:block}
+.scroll.mid .btn.prev{top:0;height:50%}
+.scroll.mid .btn.next{display:block;top:auto;bottom:0;height:50%}
+.scroll.up.step1{background-image:url(../../images/ico-scroll2_1.png)}
+.scroll.up.step2{background-image:url(../../images/ico-scroll2_2.png)}
+.scroll.up.step3{background-image:url(../../images/ico-scroll2_3.png)}
+.scroll.up.step4{background-image:url(../../images/ico-scroll2_4.png)}
+.scroll.up .btn.prev{display:block;top:0;height:100%}
+.scroll.up .btn.next{display:none}
+.scroll.black.step1{background-image:url(../../images/ico-scroll1_b.png)}
+.scroll.black.step2{background-image:url(../../images/ico-scroll2_b.png)}
+.scroll.black.step3{background-image:url(../../images/ico-scroll3_b.png)}
+.scroll.black.step4{background-image:url(../../images/ico-scroll4_b.png)}
+.scroll.black.up.step1{background-image:url(../../images/ico-scroll2_1_b.png)}
+.scroll.black.up.step2{background-image:url(../../images/ico-scroll2_2_b.png)}
+.scroll.black.up.step3{background-image:url(../../images/ico-scroll2_3_b.png)}
+.scroll.black.up.step4{background-image:url(../../images/ico-scroll2_4_b.png)}
+
+.pager{display:inline-block;vertical-align:middle}
+.pager > div,
+.pager ol{display:flex;flex-direction: row;flex-wrap: wrap;justify-items: center;align-items: center;}
+.pager ol{margin:0 30px;}
+.pager ol li{margin:0 12px;width:13px;text-align:center}
+.pager ol li button,
+.pager ol li strong{position:relative;display:block;font-family:'NanumBarunGothic';font-size:16px;color:#6e6e6e;font-weight:500;line-height:37px}
+.pager ol li strong{color:#000}
+.pager ol li strong::after{content:"";position:absolute;bottom:0;left:0;display:block;width:100%;height:3px;background:#0a91df}
+.pager .btn-page{width:8px;height:0;padding-top:14px;overflow:hidden;background-repeat: no-repeat;background-size: cover !important;background-image:url(../../images/ico-page-next.png);}
+.pager .btn-page:disabled{opacity:.42;}
+.pager .btn-page.btn-prev{transform: rotate(180deg);}
+
+/* subpage */
+/* 재단스토리 */
+.story .section .copy_box .copy_box_inner .desc{letter-spacing: -1px;}
+.story #STORY_STEP2 .copy_box{padding-top:10%}
+.story #STORY_STEP2 .signbox{background:url(../../images/story/img-sign-en.png) no-repeat 0 bottom }
+/* 연혁 */
+.history #HISTORY .box_left.fix{bottom:525px}
+.history #HISTORY .box_left .history_title.title_after{margin-top:-20px}
+.history #HISTORY .box_right .box_inner li .tit-box .desc .tit{top:0;line-height:30px}
+.history #HISTORY .box_right .box_inner li .tit-box .desc .copy{margin:15px 0 0}
+.history #HISTORY .box_left .history_num .num_inner div{padding-right:10px}
+.history #HISTORY .box_left .history_num .num_inner div,
+.history #HISTORY .box_right .box_inner li .tit-box .num{line-height:260px}
+
+.scholarship .tabNavi li .tit br {display:block}
+
+header .header_submenu li.swiper-slide span{display:block }
+header .header_submenu li.swiper-slide span br{display:none}
+/* activity */
+.business .tabCon .con-list dd{letter-spacing:-.5px}
+
+/* 윤리규범 */
+.help-list-style .italic{font-style:italic}
+.conduct article .rule{background:url(../../images/sub/img-conduct-en.jpg) no-repeat center/auto 100%;}
+.help-list-style >li h2{font-size:28px;letter-spacing:-1px}
+.help-list-style >li > div p{font-size:18px}
+.conduct .help-list-style >li h2{padding-top:0}
+/* 검색 */
+.global-search .form-box .relatedword .tit span{line-height:1.2em}
+/* 개인정보처리 */
+.privacy.novisual h1 span{line-height:1.2em}
+#content.privacy .menuContainer li a{display:inline-block;vertical-align:top}
+#content.privacy .menuContainer li.long{padding-bottom:0}
+#content.privacy .menuContainer li.long a{position:relative;top:-1em}
+#content.privacy .menuContainer li.long span{font:inherit;line-height:1.2em;}
+
+/* Media */
+@media screen and (max-width:1280px) {/* laptop */
+    .cw{display:block !important}
+    .ct,.cp{display:none !important}
+    .cw.btn-area{display:flex !important}
+    .btn.fix{width:180px;font-size:16px}
+    .btn.flow{font-size:16px}
+    .btn.hasicon{font-size:16px}
+
+    .btn-area .btn + .btn{margin-left:15px}
+}
+@media screen and (max-width:1080px){
+    header .inner_wrapper .gnbWrap > ul.gnb > li{width:100%}
+    .hassticky2 #content .menuContainer ul.swiper-wrapper{padding-right:27px}
+    .cw.w1024_block{display:block !important}
+    .cw.w1024_none{display:none !important}
+    /* 재단스토리 */
+    #STORY_STEP3 .copy_box .copy_box_inner .title.cw {display:none !important}
+    #STORY_STEP3 .copy_box .copy_box_inner .title.ct {display:block !important}
+    /* 개인정보처리 */
+    /* #content.privacy .menuContainer li.long{padding-right:2em} */
+    #content.privacy .menuContainer li.long a{top:-50%}
+    #content.privacy .menuContainer li.long a span{font-size:0.90em}
+}
+@media screen and (max-width:768px) {/* tablet */
+    .cw,.cp{display:none !important}
+    .cw.ct,
+    .ct{display:block !important}
+    .ct.btn-area,
+    .cw.ct.btn-area{display:flex !important}
+    /* .btn-blue{width:127px;height:35px;line-height:33px;font-size:12px}
+    .btn-blue-line{width:127px;height:35px;line-height:33px;font-size:12px}
+
+    .btn-black-line{width:126px;height:35px;line-height:33px;font-size:12px;letter-spacing:-0.04em}
+    .btn-black-line.big{width:100%;height:40px;line-height:38px;font-size:12px;letter-spacing:-0.04em} */
+    /* .btn-download::after{margin-top:-2px;width:9px;height:9px;margin-left:4px;background:url(../../images/ico-download-m.png) no-repeat 0 0/cover}
+    .btn-download2::after{margin-left:5px;width:9px;height:9px;background:url(../../images/ico-download2-m.png) no-repeat 0 0/cover}
+    .btn-txt-arr::after{margin-left:10px;width:6px;height:10px;background:url(../../images/ico-arr-m.gif) no-repeat 0 0/cover}
+    .btn-plus::after{margin-left:9px;width:10px;height:10px;background:url(../../images/ico-plus-m.gif) no-repeat 0 0/cover}
+    .btn-outlink::after{margin-left:6px;width:12px;height:12px;background:url(../../images/ico-btn-outlink-m.png) no-repeat 0 0/cover}
+    .ico-outlink::after{margin-top:-2px;background:url(../../images/ico-outlink-m.png) no-repeat 0 0/cover}
+    .btn-more::after{margin-left:20px;width:14px;height:8px;background:url(../../images/ico-more-m.png) no-repeat 0 0/contain} */
+
+    .btn.fix{width:150px;height:48px;line-height:46px;font-size:14px}
+    .btn.flow{padding:0 18px;height:48px;line-height:46px;font-size:14px}
+    .btn.hasicon{padding:0 18px;height:48px;line-height:46px;font-size:14px}
+    .btn-area .btn + .btn{margin-left:10px}
+
+    .btn.hasicon.btn-download::after{background-image:url(../../images/ico-download-b-m.png)}
+    .btn.hasicon.btn-txt-arr::after{background-image:url(../../images/ico-arr-b-m.png)}
+    .btn.hasicon.btn-outlink::after{background-image:url(../../images/ico-btn-outlink-b-m.png)}
+    .btn.hasicon.btn-plus::after{background-image:url(../../images/ico-plus-b-m.png)}
+    .btn.hasicon.btn-more::after{background-image:url(../../images/ico-more-b-m.png)}
+
+    .btn.hasicon.btn-download:hover::after{background-image:url(../../images/ico-download-w-m.png)}
+    .btn.hasicon.btn-txt-arr:hover::after{background-image:url(../../images/ico-arr-w-m.png)}
+    .btn.hasicon.btn-outlink:hover::after{background-image:url(../../images/ico-btn-outlink-w-m.png)}
+    .btn.hasicon.btn-plus:hover::after{background-image:url(../../images/ico-plus-w-m.png)}
+    .btn.hasicon.btn-more:hover::after{background-image:url(../../images/ico-more-w-m.png)}
+
+    .pager ol{margin:0 20px;}
+    .pager ol li{margin:0 8px;width:7px}
+    .pager ol li button,
+    .pager ol li strong{font-size:12px;line-height:24px}
+    .pager ol li strong::after{height:2px}
+    .pager .btn-page{width:6px;padding-top:9px;background-image:url(../../images/ico-page-next-m.png);}
+
+    /* 재단스토리 */
+    .story #STORY_STEP2 .copy_box{padding-top:18%}
+    .story #STORY_STEP2 .signbox{background-size:auto 100%;}
+    /* 윤리규범 */
+    .conduct article .rule{background:url(../../images/sub/img-conduct-en-m.jpg) no-repeat center/auto 100%;}
+    .help-list-style >li h2{width:150px;font-size:20px}
+    .help-list-style >li > div p{font-size:14px}
+    .conduct .help-list-style >li h2{width:130px;font-size:18px}
+   
+}
+@media screen and (max-width:766px){
+    .hassticky2 #content .menuContainer li.swiper-slide:first-child a{padding-left:0}
+    .hassticky2 #content .menuContainer li.swiper-slide a{padding:0 15px}
+}
+@media screen and (max-width:640px) {  /* mobile */
+    .cw,.ct,
+    .cw.ct{display:none !important}
+    .cp{display:block !important}
+    .cp.btn-area{display:flex !important}
+    .btn-more::after{margin-left:17px}
+    .btn.fix{width:100%;padding:0 16px;}
+    .btn.hasicon{width:100%;padding:0 16px}
+    .btn.hasicon::after{margin-left:15px}
+    .btn-area .btn + .btn{margin-left:0;margin-top:15px}
+    .pager ol{margin:0 21px;}
+    .pager ol li{margin:0 9px;width:7px}
+    .pager ol li button,
+    .pager ol li strong{font-size:12px;line-height:22px}
+    .pager ol li strong::after{height:1px}
+
+    .conduct .help-list-style >li h2{width:100%}
+    /* 재단스토리 */
+    .story #STORY_STEP3 .copy_box .copy_box_inner .title.ct {display:none !important}
+    .story #STORY_STEP2 .copy_box{padding:0}
+    .help-list-style >li h2{width:100%;font-size:22px}
+    /* 개인정보  */
+    .privacy .box-span > span:first-child{width:145px}
+}
+@media screen and (max-width:359px) {
+    header .header_submenu li.swiper-slide span{height:calc(100% - 28px);margin:-10px 0}
+    header .header_submenu li.swiper-slide span br{display:block}
+    header .header_submenu li.swiper-slide{margin:14px 8px}
+}

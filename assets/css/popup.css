@@ -1,0 +1,87 @@
+/* 팝업 관련  */
+/* pop-zip */
+::-webkit-scrollbar{display:auto} 
+.pop-zip{padding-top:64px}
+.pop-zip .search-bar{position:fixed;top:0;left:0;width:100%;border-bottom:1px solid #ddd;padding-right:57px;background:#fff;z-index:1}
+.pop-zip .search-bar .input-box label,
+.pop-zip .search-bar .input-box input{padding-left:28px;font-size:20px;height:64px;line-height:64px;letter-spacing: -0.04em;color:#363636;text-align:left}
+.pop-zip .search-bar .btn-srch{position:absolute;top:50%;right:15px;width:40px;height:40px;padding-top:40px;background:url(../images/sub/btn-p-srch.png) no-repeat center;box-sizing: border-box;overflow:hidden;transform: translate(0,-50%);}
+.pop-zip .result-box{padding:25px;text-align:left}
+.pop-zip .result-box .tit-st{font-size:24px;letter-spacing:-0.04em;color:#0590e1;font-weight:700}
+.pop-zip .result-box .tit-st + p{margin:10px 0 0;font-size:18px;letter-spacing:-0.04em;color:#333;}
+.pop-zip .result-box .table-st{margin:25px 0 0;border-top:2px solid #000}
+.pop-zip .result-box .table-st thead th{background:#f3f3f3}
+.pop-zip .result-box .table-st th,
+.pop-zip .result-box .table-st td{font-size:18px;text-align:center;letter-spacing:-0.04em;height:60px;vertical-align: middle;border-bottom:1px solid #ddd}
+.pop-zip .result-box .table-st th{font-weight:700;color:#333}
+.pop-zip .result-box .table-st td{color:#666}
+.pop-zip .result-box .table-st .colum1{width:33.6%}
+.pop-zip .result-box .table-st .colum2{width:32.5%}
+.pop-zip .result-box .table-st .colum3{width:33.9%}
+.pop-zip .result-box .tip{position:fixed;bottom:0;left:0;background:#fff;padding:30px;border-top:1px solid #ddd}
+.pop-zip .result-box .tip .list-st {margin:10px 0 0}
+.pop-zip .result-box .tip .list-st li{position:relative;padding-left:.7em;font-size:18px;color:#333;letter-spacing:-0.04em;line-height:28px}
+.pop-zip .result-box .tip .list-st li::before{position:absolute;top:0;left:0;display:inline-block;font:inherit;content:"*";line-height:28px}
+.pop-zip .result-box .tip .list-st li + li{margin:15px 0 0}
+.pop-zip #searchInfo{padding-bottom:240px}
+.pop-zip #searchList{display:none;position:relative}
+.pop-zip .alert-box{padding:20px;text-align:left;font-size:15px;line-height:1.5em;border-bottom:1px solid #ddd;}
+.pop-zip .searching{position:absolute;top:160px;left:50%;transform: translate(-50%,0);text-align:center}
+.pop-zip .result-box .tit-st2{font-size:22px;letter-spacing:-0.04em;color:#333;font-weight:700}
+.pop-zip .resultList{border-top:1px solid #ddd;margin:25px 0 0;width:100%;}
+.pop-zip .resultList >li{position:relative;padding:25px 0;padding-right:137px;border-bottom:1px solid #ddd}
+.pop-zip .resultList > li:hover{background:#fafafa}
+.pop-zip .btn-toggle{position:relative;margin:15px 0 0;display:inline-block;padding-right:13px;font-size:16px;color:#666;letter-spacing:-0.04em;}
+.pop-zip .btn-toggle::before{position:absolute;bottom:0;left:0;display:block;width:calc(100% - 13px);height:1px;background:#b9b9b9;content:""}
+.pop-zip .btn-toggle::after{position:absolute;right:0;top:calc(50% - 3px);display:inline-block;width:10px;height:6px;background:url(../images/sub/ico-p-arr.png) no-repeat 0 0/cover;transition:all .3s;content:""}
+.pop-zip .btn-toggle.active::after{transform: rotate(180deg);}
+.pop-zip .btn-toggle + ul{display:none;margin:10px 0 0}
+.pop-zip .btn-toggle + ul li{font-size:16px;color:#666;line-height:30px}
+.pop-zip .btn-toggle  +ul li a{font:inherit}
+.pop-zip .resultList li .btn-eng{position:absolute;top:20px;right:20px;width:108px;height:56px;line-height:56px;background:#0590e1;color:#fff;font-size:18px;}
+.pop-zip .resultList li > dl{display:table;width:100%;table-layout: fixed;}
+.pop-zip .resultList li > dl + dl{margin-top:20px;}
+.pop-zip .resultList li > dl >*{display:table-cell;vertical-align: top;text-align:left;letter-spacing:-0.04em;font-size:18px;line-height:1.2em}
+.pop-zip .resultList li > dl dt{width:120px;padding-left:25px;color:#333;font-weight:700}
+.pop-zip .resultList li > dl dd{color:#666;word-break: break-all;}
+.pop-zip .resultList li > dl dd a{font:inherit;word-break: break-all;}
+.pop-zip .btn-area{margin:20px 0;text-align:center}
+.pop-zip .btn-more{font-size:18px;letter-spacing:-0.04em}
+.pop-zip .btn-more::after{display:inline-block;width:18px;height:18px;margin-left:10px;vertical-align:middle;content:"";background-repeat:no-repeat;background-size:cover;background-image:url(../images/ico-more-b.png)}
+@media screen and (max-width:599px){
+    .pop-zip{padding-top:60px}
+    .pop-zip .search-bar{padding-right:39px}
+    .pop-zip .search-bar .input-box label,
+    .pop-zip .search-bar .input-box input{padding-left:16px;font-size:14px;height:60px;line-height:60px}
+    .pop-zip .search-bar .btn-srch{right:10px;width:29px;height:29px;padding-top:29px;background:url(../images/sub/btn-p-srch.png) no-repeat center/cover;box-sizing: border-box;overflow:hidden;transform: translate(0,-50%);}
+    .pop-zip .result-box{padding:30px 16px 16px}
+    .pop-zip .result-box .tit-st{font-size:18px}
+    .pop-zip .result-box .tit-st + p{margin:6px 0 0;font-size:14px;}
+    .pop-zip .result-box .table-st{margin:40px 0 0}
+    .pop-zip .result-box .table-st th,
+    .pop-zip .result-box .table-st td{font-size:14px}
+    .pop-zip .result-box .tip{padding:40px 15px}
+    .pop-zip .result-box .tip .list-st {margin:10px 0 0}
+    .pop-zip .result-box .tip .list-st li{padding-left:.7em;font-size:14px;line-height:22px}
+    .pop-zip .result-box .tip .list-st li::before{line-height:22px}
+    .pop-zip .result-box .tip .list-st li + li{margin:10px 0 0}
+    .pop-zip #searchInfo{padding-bottom:256px}
+    .pop-zip #searchList{height:calc(100% - 60px)}
+    .pop-zip .result-box .tit-st2{font-size:16px;}
+    .pop-zip .resultList{margin:25px 0 0;}
+    .pop-zip .resultList >li{padding:15px;}
+    .pop-zip .btn-toggle{margin:15px 0 0;padding-right:18px;font-size:13px;}
+    .pop-zip .btn-toggle::before{width:calc(100% - 18px);}
+    .pop-zip .btn-toggle::after{top:calc(50% - 3.5px);width:11px;height:7px;}
+  
+    .pop-zip .btn-toggle + ul li{font-size:13px;line-height:25px}
+    .pop-zip .resultList li .btn-eng{top:15px;right:15px;width:85px;height:44px;line-height:44px;font-size:14px;}
+    .pop-zip .resultList li > dl:first-child{padding-right:110px;}
+    .pop-zip .resultList li > dl + dl{margin-top:10px;}
+    .pop-zip .resultList li > dl,
+    .pop-zip .resultList li > dl >*{display:block;width:100%;font-size:14px;line-height:1.5em}
+    .pop-zip .resultList li > dl dt{width:100%;padding-left:0}
+
+    .pop-zip .btn-more{font-size:14px}
+    .pop-zip .btn-more::after{width:14px;height:8px;background-image:url(../images/ico-more-m.png)}
+}

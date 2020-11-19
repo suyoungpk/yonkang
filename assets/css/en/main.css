@@ -1,0 +1,25 @@
+
+@import url(../common.css);
+@import url(../layout.css);
+@import url(../layout_1280.css);
+@import url(../layout_1080.css);
+@import url(../layout_766.css);
+@import url(../swiper.min.css);
+@import url(../main.css);
+
+header .inner_wrapper .servicesWrap .logo_yk{height:20px}
+header .inner_wrapper .servicesWrap .selectForm p{width:90px}
+header .inner_wrapper .gnbWrap > ul.gnb > li{width:196px}
+.main-news .tit-box .inner-box .btn-more{padding-bottom:0.2em}
+.visual-con .con .tit{transform: translate(0,-300%);}
+@media screen and (max-width:1400px){
+    header .inner_wrapper .gnbWrap > ul.gnb > li{width:20%}
+}
+@media screen and (max-width:1080px){
+    header .inner_wrapper .logoWrap .logo_yk{height:15px}
+    header .inner_wrapper .gnbWrap > ul.gnb > li{width:100%}
+}
+@media screen and (max-width:359px){
+    header .inner_wrapper .logoWrap .logo_yk{height:auto;width:140px}
+    .visual-con .con .tit{letter-spacing:-1px}
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>주소 검색 : 두산연강재단</title>
+	<meta name="keywords" content="두산 연강재단">
+	<meta name="description" content="두산 연강재단">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+	<link rel="alternate" hreflang="ko" href="http://www.yonkang.org/kr/" title="ko_KR" />
+	<link rel="alternate" hreflang="en" href="http://www.yonkang.org/en/" title="us" />
+	 <!-- for only this popup -->
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/popup.css">
+</head>
+<body>
+	<section class="container popup pop-zip">
+		<form action="">
+			<div class="search-bar">
+				<div class="input-box">
+					<label for="srch">검색 : 예) 연지동 270, 종로 33길 15</label>
+					<input type="search" id="srch">
+				</div>
+				<button class="btn btn-srch" type="button" onclick="search()">검색</button>
+			</div><!--// search-bar -->
+			<div class="result-box" id="searchInfo">
+				<h1 class="tit-st">안내사항</h1>
+				<p>정확한 검색을 위해 도로명 및 건물명으로 입력 해주세요.</p>
+				<table class="table-st">
+					<caption class="hidden">주소 검색 안내</caption>
+					<colgroup>
+						<col class="colum1">
+						<col class="colum2">
+						<col class="colum3">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">항목</th>
+							<th scope="row">검색어</th>
+							<th scope="row">예시</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>도로명</td>
+							<td>도로명+번호</td>
+							<td>종로 33길 15</td>
+						</tr>
+						<tr>
+							<td>건물명</td>
+							<td>건물명침</td>
+							<td>두산아트센터</td>
+						</tr>
+						<tr>
+							<td>지번</td>
+							<td>동 리+번호</td>
+							<td>연지동 70</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="tip">
+					<h2 class="tit-st">TIP</h2>
+					<ul class="list-st">
+						<li>시, 군, 구, 읍, 면, 동, 동 주소 단위의 구분 시 검색어에 주소 단위를 포함하여 
+							주시고 반드시 띄어쓰기 해 주세요.</li>
+						<li>단순 건물명, 도로명 보다는 번호가 포함된 상세주소로 검색 해주세요.</li>
+					</ul>
+				</div>
+			</div><!--// result-box -->
+			<!-- 검색중일 경우 출력  -->
+			<!-- <div class="searching"><h1 class="tit-st2">검색 중입니다...</h1></div> -->
+			 <div  id="searchList">
+				 <!-- 결과가 많을 경우 출력 -->
+				<div class="alert-box">
+					<p>검색결과가 많습니다. </p>
+					<p>정확한 검색을 위해 '도로명 + 번호' 또는 '동·리 + 지번'으로 검색해 보시기 바랍니다.</p>
+				</div> 
+				 <!--// 결과가 많을 경우 출력 -->
+				<div class="result-box">
+					<h1 class="tit-st2">검색결과</h1>
+					<ul class="resultList">
+						<li>
+							<dl>
+								<dt>우편번호</dt>
+								<dd><a href="#">08327</a></dd>
+							</dl>
+							<dl>
+								<dt>도로명</dt>
+								<dd><a href="#">서울 구로구 가마산로 77</a></dd>
+							</dl>
+							<dl>
+								<dt>지번</dt>
+								<dd><a href="#">서울 구로구 구로동 긴주소 긴주소 긴주소 긴주소 긴주소 긴주소 긴주소 긴주소 긴주소 긴주소 긴주소 긴주소</a>
+									<button class="btn btn-toggle" type="button">관련지번 2건 </button>
+									<ul>
+										<li>서울 구로구 703-115</li>
+										<li>서울 구로구 703-103</li>
+									</ul>
+								</dd>
+							</dl>
+							<button class="btn btn-eng" type="button">영문주소</button>
+						</li>
+						<li>
+							<dl>
+								<dt>우편번호</dt>
+								<dd><a href="#">08327</a></dd>
+							</dl>
+							<dl>
+								<dt>도로명</dt>
+								<dd><a href="#">longlonglonglonglonglonglonglonglonglonglonglonglonglonglong, Gamasan-ro, Guro-gu, Seoul, korea</a></dd>
+							</dl>
+							<dl>
+								<dt>지번</dt>
+								<dd>
+									<a href="#">703-3, Guro-dong, Guro-gu, Seoul, korea</a>
+								
+								</dd>
+							</dl>
+							<button class="btn btn-eng" type="button">한글주소</button>
+						</li>
+						<li>
+							<dl>
+								<dt>우편번호</dt>
+								<dd><a href="#">08327</a></dd>
+							</dl>
+							<dl>
+								<dt>도로명</dt>
+								<dd><a href="#">서울 구로구 가마산로 77</a></dd>
+							</dl>
+							<dl>
+								<dt>지번</dt>
+								<dd><a href="#">서울 구로구 구로동 703-3</a></dd>
+							</dl>
+							<button class="btn btn-eng" type="button">영문주소</button>
+						</li>
+					</ul>
+					<div class="btn-area">
+						<button class="btn btn-more" type="button">더보기</button>
+					</div>
+				</div>
+			</div> 
+			<!--// result-box -->
+		</form>
+	</section> 
+<!-- common area : js -->
+<script type="text/javascript" charset="utf-8" src="../assets/js/lib/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../assets/js/lib/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../assets/js/lib/perfect-scrollbar.min.js"></script>	
+<script type="text/javascript" charset="utf-8" src="../assets/js/lib/TweenMax.min.js"></script>	
+<script type="text/javascript" charset="utf-8" src="../assets/js/lib/ScrollMagic.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../assets/js/lib/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../assets/js/lib/jquery.easeScroll.js"></script>
+<script type="text/javascript" charset="utf-8" src="../assets/js/common.js"></script>
+<!--// common area -->
+<script>
+	searchUI();
+	function searchUI(){
+		$(document).on('click','.btn-toggle',function(){
+			$(this).toggleClass('active');
+			$(this).next('ul').slideToggle();
+		});
+	};
+	function search(){
+		$('#searchInfo').hide();
+		$('#searchList').show();
+		searchUI();
+	}
+</script>
+</body>
+</html>

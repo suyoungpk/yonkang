@@ -1,0 +1,205 @@
+.business {padding-bottom:140px}
+.business .inner_wrapper .tab-area{position:relative;text-align:left}
+.business .tabNavi {position:absolute;top:80px;left:0}
+.business .tabNavi.stop{top:auto;bottom:0 !important}
+.business .tabNavi.fixed{position:fixed;top:143px;left:50%;margin-left:-558px}
+.business .tabNavi li{height:0;visibility: hidden;}
+.business .tabNavi li.active{height:auto;visibility: visible;}
+.business .tabNavi li .tit{margin:0;font-size:32px;font-weight:500;color:#000;letter-spacing:-1px;line-height:1.3125em}
+.business .tabNavi li .btn-box{margin:48px 0 0;text-align:left}
+.business .tabNavi{width:275px}
+.business .tabCon{width:100%;overflow:hidden;padding:55px 0 ;padding-left:275px;box-sizing:border-box}
+.business .tabCon .con-list{margin:0 -28px;width:calc(100% + 56px);display:flex;flex-flow:row wrap;align-items:stretch;justify-content:flex-start }
+.business .tabCon .con-list li .img{width:100%;height:0;padding-top:200px;background:#eee}
+.business .tabCon .con-list li .img-box .img,
+.business .tabCon .con-list li{width:392px;margin:25px 28px}
+.business .tabCon .con-list li .img-box .img{margin:0 28px}
+.business .tabCon .con-list dl{margin:20px 0 0}
+.business .tabCon .con-list dt{font-size:20px;letter-spacing:-1px;color:#111;font-weight:500;line-height:32px}
+.business .tabCon .con-list dd{font-size:17px;line-height:28px;color:#444;letter-spacing:-1px}
+.business .tabCon .con-list .btn-area{margin:22px 0 0;justify-content: flex-start ;}
+
+.business .tabCon .con-list .hasbtn{position:relative;padding-bottom:78px;}
+.business .tabCon .con-list .hasbtn .btn-area{margin:0;position:absolute;bottom:0;left:0;width:100%}
+
+.business .gallery{position:relative;border-top:1px solid #e5e5e5;padding:60px 0 45px;text-align:left;overflow:hidden}
+.swiper-notification{display:none}
+.business .gallery .slide-con{background:#fff}
+.business .gallery .slide-con .img{width:100%;height:0;padding-top:47.58%;}
+.business .gallery .slide-con .tit{margin:25px 0 0;font-size:20px;letter-spacing:-1px;font-weight:500;color:#111;line-height:1.3em}
+.business .gallery .btn-box{position:absolute;bottom:0;left:0;width:100%}
+.business .gallery .btn-box > div{position:relative;display:table;width:100%}
+.business .gallery .btn-box > div > *{position:relative;display:table-cell;vertical-align:middle;height:16px;line-height:16px;}
+.business .gallery .swiper-button-next,
+.business .gallery .swiper-button-prev {margin:0;background:transparent;z-index:1;text-indent:-999px;overflow:hidden}
+.business .gallery > .swiper-button-next,
+.business .gallery > .swiper-button-prev{top:60px;width:50%;height:0;padding-top:47.58%}
+.business .gallery > .swiper-button-next{right:0;}
+.business .gallery > .swiper-button-prev{left:0;}
+.business .gallery > .swiper-button-next::after,
+.business .gallery > .swiper-button-prev::after{display:none}
+.business .gallery .btn-box .swiper-button-next,
+.business .gallery .btn-box .swiper-button-prev {margin-top:-8px;text-align:center;line-height:16px;width:9px;height:16px;padding:0;background:transparent;z-index:1;text-indent:-999px;overflow:hidden}
+.business .gallery .btn-box .swiper-button-next::after,
+.business .gallery .btn-box .swiper-button-prev::after{display:inline-block;width:9px;height:16px;background:url(../images/sub/btn-gallery-prev.png) no-repeat 0 0/cover}
+.business .gallery .btn-box .swiper-button-next::after{transform:rotate(180deg)}
+.business .gallery .btn-box .swiper-button-next{right:0}
+.business .gallery .btn-box .swiper-button-prev{left:40px}
+.business .gallery .swiper-cnt-box{width:80px;text-align:left;font-size:15px;letter-spacing:-0.04em;color:#a6a6a6}
+.business .gallery .swiper-cnt-box span{font:inherit}
+.business .gallery .swiper-cnt-box .count{color:#111}
+.business .gallery .swiper-cnt-box .total{color:#a6a6a6}
+.business .gallery .swiper-button-box{width:99px}
+.business .gallery .swiper-pagination-progressbar{position:relative;background:#e5e5e5;display:inline-block;width:100%;height:2px;vertical-align: middle;}
+.business .gallery .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:#0590e1;position:absolute;left:0;top:0;width:100%;height:100%;transform:scale(0);transform-origin:left top}
+.business .gallery .swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{transform-origin:right top}
+.business .gallery .swiper-container-horizontal > .swiper-pagination-progressbar,
+.business .gallery .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{width:100%;height:2px;left:0;bottom:0;top:auto}
+
+.scholarship .keyvisual{background:url(../images/sub/img-visual-scholarship.jpg) no-repeat center}
+.business.scholarship .tabCon.last .con-list li{width:100%;}
+.business.scholarship .tabCon .con-list li .img-box{margin:0 -28px;width:calc(100% + 56px);overflow:hidden}
+.business.scholarship .tabCon .con-list li .img-box .img{float:left}
+.scholarship  .tabNavi li .tit br{display:none}
+
+.culture .keyvisual{background:url(../images/sub/img-visual-culture.jpg) no-repeat center}
+.culture.v1 .keyvisual{background:url(../images/sub/img-visual-culture1.png) no-repeat center}
+.culture.v2 .keyvisual{background:url(../images/sub/img-visual-culture2.png) no-repeat center}
+.culture.v3 .keyvisual{background:url(../images/sub/img-visual-culture3.png) no-repeat center}
+.culture .tabNavi li .des{margin:130px 0 0;padding:42px 0 0;background:url(../images/sub/img-culture-tit.gif) no-repeat 0 0;font-size:16px;color:#333;letter-spacing:-0.04em;line-height:24px}
+.culture .tabNavi li .btn-box{margin:25px 0 0}
+/* popup */
+.pop-award{width:600px;height:90%}
+.pop-award .contxt{height:calc(100% - 100px)}
+.pop-award .contxt .help{padding:20px 0;font-size:13px;color:#666}
+.pop-award .contxt .help + ul{border-top:1px solid #e3e3e3}
+.pop-award .contxt ul li{width:100%;padding:30px 0 ;border-bottom:1px solid #e3e3e3}
+.pop-award .contxt ul li dl{display:table;width:100%}
+.pop-award .contxt ul li dl > *{display:table-cell;vertical-align: top;}
+.pop-award .contxt ul li dl dt{width:122px;font-size:22px;font-weight:500;color:#000;letter-spacing: -0.04em;line-height:32px;text-align:center}
+.pop-award .contxt ul li dl dd{padding:0 34px}
+.pop-award .contxt ul li dl dd .tit{font-size:18px;color:#000;letter-spacing:-0.04em;line-height:32px}
+.pop-award .contxt ul li dl dd .ref{position:relative;padding-left:10px;font-size:16px;color:#666;line-height:24px;letter-spacing:-0.04em}
+.pop-award .contxt ul li dl dd .ref::before{position:absolute;top:0;left:0;font:inherit;line-height:inherit;content:"-";}
+.pop-award .contxt ul li dl dd .ref + .tit{margin:25px 0 0}
+
+#popup-award4{height:auto}
+/* Media */
+@media screen and (max-width:1280px) {/* laptop */
+    .business .inner_wrapper {padding:0 82px;}
+    .business .tabNavi.fixed{left:50px;margin-left:0}
+    .business .gallery > .swiper-button-next:hover,
+    .business .gallery > .swiper-button-prev:hover{cursor: default;}
+
+}
+@media screen and (max-width:1080px) {/* laptop */
+    .business .inner_wrapper {padding:0 82px;}
+
+    .business .gallery > .swiper-button-next,
+    .business .gallery > .swiper-button-prev{display:none}
+    .business .tabNavi.fixed{top:133px;left:50px;margin-left:0}
+    .business .gallery .slide-con .tit{font-size:18px;}
+}
+
+@media screen and (max-width:768px) {/* tablet */
+    .business {padding-bottom:67px}
+    .business .tabNavi {top:89px}
+    .business .tabNavi.fixed{top:133px;left:16px;margin-left:0}
+    .scholarship .tabNavi .btn.hasicon{padding:0 8px}
+    .business .tabNavi li .tit{font-size:24px;line-height:34px}
+    .scholarship  .tabNavi li .tit br{display:block}
+    .business .tabNavi li .btn-box{margin:30px 0 0}
+    .business .tabNavi{width:164px}
+    .business .tabCon{padding:67px 0 ;padding-left:164px}
+    .business .tabCon .con-list{margin:0 -19px;width:calc(100% + 40px)}
+    .business .tabCon .con-list li .img{padding-top:165px}
+    .business .tabCon .con-list li .img img{height:100%;width:auto}
+    .business .tabCon .con-list li .img-box .img,
+    .business .tabCon .con-list li{width:234px;margin:21px 19px}
+    .business .tabCon .con-list li .img-box .img{margin:0 19px}
+    .business .tabCon .con-list dl{margin:24px 0 0}
+    .business .tabCon .con-list dt{font-size:16px;line-height:24px}
+    .business .tabCon .con-list dd{font-size:14px;line-height:24px}
+    .business .tabCon .con-list dd br{display:none}
+    .business .tabCon.last {padding-bottom:40px}
+    
+    .business .gallery{padding:50px 0 42px}
+    .business .gallery .btn-box .swiper-button-prev{left:25px}
+    .business .gallery .btn-box .swiper-button-next::after,
+    .business .gallery .btn-box .swiper-button-prev::after{background:url(../images/sub/btn-gallery-prev-m.png) no-repeat 0 0/cover}
+    .business .gallery .swiper-cnt-box{width:70px}
+    .business .gallery .swiper-button-box{width:83px}
+
+
+    .scholarship .keyvisual{background:url(../images/sub/img-visual-scholarship-t.jpg) no-repeat center/cover}  
+    .business.scholarship .tabCon .con-list li .img-box{margin:0 -19px;width:calc(100% + 40px);}
+
+    .culture .keyvisual{background:url(../images/sub/img-visual-culture-t.jpg) no-repeat center/cover}  
+    .culture.v1 .keyvisual{background:url(../images/sub/img-visual-culture1-t.png) no-repeat center/cover}  
+    .culture.v2 .keyvisual{background:url(../images/sub/img-visual-culture2-t.png) no-repeat center/cover}  
+    .culture.v3 .keyvisual{background:url(../images/sub/img-visual-culture3-t.png) no-repeat center/cover}  
+    .culture .tabNavi li .des{margin:150px 0 0;padding:38px 0 0;font-size:12px;line-height:19px;background:url(../images/sub/img-culture-tit-t.gif) no-repeat 0 0 /auto 10px}
+    .culture .tabNavi li .btn-box{margin:30px 0 0}
+}
+
+@media screen and (max-width: 766px){
+    .business .tabNavi.fixed{left:16px;}
+    #content.business.culture .menuContainer ul.swiper-wrapper{justify-content: center;}
+}
+@media screen and (max-width:640px) {  /* mobile */
+    .business {padding-bottom:0}
+    .business .tabCon{position:relative;padding:90px 0 158px;overflow:visible}
+    /* .business.culture .tabCon{padding-bottom:100px} */
+    .business.culture .gallery{padding:0;margin:20px 0 0;}
+    .business .tabCon:nth-of-type(1){padding-top:40px}
+    .business .tabCon h2{margin:0 0 30px;font-size:24px;letter-spacing:-0.04em;color:#000;font-weight:500}
+    .business .tabCon .con-list{margin:0;width:100% }
+    .business .tabCon .con-list li .img{padding-top:69.2%}
+    .business .tabCon .con-list li .img img{height:auto;width:100%}
+    .business .tabCon .con-list li .img-box .img,
+    .business .tabCon .con-list li{width:100%;margin:0 }
+    .business .tabCon .con-list li + li{margin:43px 0 0 }
+    .business.scholarship .tabCon .con-list li .img-box{margin:0;width:100%}
+    .business .tabCon .con-list li .img-box .img{margin:0;background:#eee}
+    .business .tabCon .con-list li .img-box .img + .img{margin:12px 0 0}
+    .business .tabCon .con-list dl{margin:30px 0 0}
+    .business .tabCon .con-list dt{font-size:17px}
+    .business .tabCon .con-list dd{margin:20px 0 0;font-size:14px;line-height:23px}
+    .business .tabCon .con-list dd br{display:none}
+    /* .business .tabCon.last {padding-bottom:50px} */
+    .business.scholarship .tabCon.last {padding-bottom:160px}
+    .business .tabCon > .btn-area{position:absolute;bottom:0;left:-16px;width:calc(100% + 32px);border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;padding:15px 16px;z-index:1}
+    
+    .business .gallery{padding:0 0 42px;border:0}
+    .business.scholarship .gallery{padding-top:20px}
+    .business .gallery .btn-box .swiper-button-prev{left:25px}
+    .business .gallery .slide-con .img{padding-top:69.44%;background:#eee}
+    .business .gallery .slide-con .tit{font-size:16px}
+    .business .gallery .swiper-cnt-box{width:65px}
+    .business .gallery .swiper-button-box{width:83px}
+    .business .last-box{position:relative;padding-bottom:160px}
+    .business .last-box .btn-area{position:absolute;bottom:0;left:-16px;width:calc(100% + 32px);border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;padding:15px 16px;z-index:1}
+    .scholarship .keyvisual{background:url(../images/sub/img-visual-scholarship-m.jpg) no-repeat center/cover}  
+    
+    /* .scholarship .tabCon .con-list .btn-black-line{width:120px;height:32px;line-height:30px;} */
+
+    .culture .keyvisual{background:url(../images/sub/img-visual-culture-m.jpg) no-repeat center/cover}  
+    .culture.v1 .keyvisual{background:url(../images/sub/img-visual-culture1-m.png) no-repeat center/cover}  
+    .culture.v2 .keyvisual{background:url(../images/sub/img-visual-culture2-m.png) no-repeat center/cover}  
+    .culture.v3 .keyvisual{background:url(../images/sub/img-visual-culture3-m.png) no-repeat center/cover}  
+    .culture .last-box .btn-area .btn,
+    .culture .tabCon > .btn-area .btn{position:absolute;top:50%;right:16px;width:auto;transform: translate(0,-50%);}
+    .culture .last-box .btn-area  .des,
+    .culture .tabCon > .btn-area .des{padding:16px 0 0;width:100%;font-size:13px;line-height:16px;background:url(../images/sub/img-culture-tit-t.gif) no-repeat 0 0 /auto 10px;text-align:left}
+
+    .pop-award{width:100%;}
+    .pop-award .contxt ul li{padding:25px 0 }
+    .pop-award .contxt ul li dl{display:block}
+    .pop-award .contxt ul li dl > *{display:block}
+    .pop-award .contxt ul li dl dt{width:100%;font-size:21px;text-align:left}
+    .pop-award .contxt ul li dl dd{margin:10px 0 0;padding:0}
+    .pop-award .contxt .help{padding:15px 0;font-size:12px;line-height:1.2em}
+    .pop-award .contxt ul li dl dd .tit{font-size:15px;line-height:20px;letter-spacing: -1px;}
+    .pop-award .contxt ul li dl dd .ref{font-size:14px;line-height:20px}
+    .pop-award .contxt ul li dl dd .ref + .tit{margin:10px 0 0}
+} 

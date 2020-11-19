@@ -1,0 +1,17 @@
+@charset "utf-8";
+@font-face {
+font-family: 'NanumBarunGothic';
+font-weight: normal;
+src: url(NanumBarunGothicSubset.eot);
+src: url(NanumBarunGothicSubset.eot?#iefix) format('embedded-opentype'),
+		url(NanumBarunGothicSubset.woff) format('woff'),
+		url(NanumBarunGothicSubset.ttf) format('truetype');
+}
+@font-face {
+font-family: 'NanumBarunGothic';
+font-weight: 700;
+src: url(NanumBarunGothicBoldSubset.eot);
+src: url(NanumBarunGothicBoldSubset.eot?#iefix) format('embedded-opentype'),
+		url(NanumBarunGothicBoldSubset.woff) format('woff'),
+		url(NanumBarunGothicBoldSubset.ttf) format('truetype');
+}

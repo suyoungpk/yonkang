@@ -1,0 +1,1147 @@
+/* 지원하기 관련
+    두산꿈나무 .multicultural
+    장학금(고교) .award-high-school
+    장학금(대학) .award-university
+    과학교사 학술시찰 .science-teacher
+    교사해외경제시찰  .economy-teacher
+    도서지원 .support.book
+*/
+/* common .support*/
+template,
+.template{display:none}
+#content.support .keyvisual{background:url(../images/sub/img-visual-support.jpg) no-repeat center}
+/* 지원신청 랜딩 */
+#content.support.list .inner_wrapper{width:100%;overflow:hidden}
+.support.list  .application-list{margin:60px -20px  70px;display:flex;flex-direction: row;flex-wrap: wrap;justify-content:center}
+.support.list  .application-list li{position:relative;display:inline-block;width:calc(33.3% - 40px);max-width:510px;margin:20px;text-align:left}
+.support.list  .application-list li div{padding:20px 24px }
+.support.list  .application-list li .tit{margin:0 0 5px;font-size:25px;line-height:1.5em;font-weight:500;color:#111;letter-spacing:-1px}
+.support.list  .application-list li dl{display:table;width:100%;text-align:left}
+.support.list  .application-list li dl > *{display:table-cell;vertical-align:top;font-size:16px;color:#5e5e5e;opacity:.8;line-height:28px;letter-spacing:-1px}
+.support.list  .application-list li dl dt{width:100px}
+.support.list  .application-list li .img{width:100%;height:0;padding-top:240px;background:#eee}
+.support.list  .application-list li .img img{width:auto;height:100%}
+.support.list  .application-list li .badge{display:inline-block;position:absolute;top:0;left:0;font-size:18px;color:#fff;padding:0 15px;line-height:44px;z-index:1}
+.support.list  .application-list li.applying .badge{background:#0088ce}
+.support.list  .application-list li.pending .badge{background:#0018a8}
+.support.list  .application-list li.announcing .badge{background:#00ad83}
+.support.list  .application-list li.finished{height:240px;}
+.support.list  .application-list li.finished .img::after{position:absolute;display:block;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.7);content:""}
+.support.list  .application-list li.finished > div{position:absolute;top:50%;left:0;width:100%;vertical-align:middle;transform: translate(0,-50%);}
+.support.list  .application-list li.finished > div p{text-align:center;color:#fff;font-size:16px;line-height:30px}
+.support.list  .application-list li.finished > div .tit{font-size:22px;margin:0}
+/* 지원공고 */
+.support.information .title-area{margin:80px 0 0;padding:40px 30px;width:100%;border-top:1px solid #e5e5e5;text-align:left}
+.support.information .title-area h2{width:100%;line-height:1.2em;font-size:34px;color:#111;font-weight:700}
+.support.information .title-area dl{margin:20px 0 0;width:100%;}
+.support.information .title-area dl> *{display:inline-block;vertical-align:top;font-size:18px;letter-spacing:-1px}
+.support.information .title-area dl dt{color:#666}
+.support.information .title-area dl dd{width:246px;margin-left:30px;color:#222}
+.support.information .context-area{width:100%;padding:60px 30px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;text-align:left}
+.support.information .context-area div{font-size:18px;line-height:26px;letter-spacing:-1px}
+.support.information .btn-area{margin:100px 0 110px}
+
+.support.information .file-list{display:table;width:100%;border-bottom:1px solid #e5e5e5;table-layout: fixed}
+.support.information .file-list > *{display:table-cell;vertical-align: middle;text-align:left}
+.support.information .file-list dt{width:13%;text-align:center;background:#f4f4f4;font-size:18px;line-height:36px;color:#444;border-right:1px solid #e5e5e5}
+.support.information .file-list ul {padding:16px 30px}
+.support.information .file-list ul li{text-align:left;height:36px;line-height:36px}
+.support.information .file-list ul li a{display:inline-block;padding-right:5px;font-size:18px;color:#0590e1;letter-spacing: -1px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+
+/* 지원신청 결과 */
+.support.result .tit-st{margin:70px 0 0}
+.support.result .subtit{line-height:30px}
+.support.result .subtit strong{font:inherit;font-weight:500;color:#0590e1}
+.support.result .step{margin-top:75px;margin-bottom:0;}
+.support.result .step.v2 li + li{margin-left:185px}
+.support.result .btn-area{margin:100px 0 }
+.support.result .tit-st2{font-size:24px;color:#111;letter-spacing:-1px}
+.support.result .box{width:935px;margin:80px auto 0}
+.support.result .box .textarea-box {margin:45px 0 0;overflow:hidden}
+.support.result .box .textarea-box textarea{float:left;font-size:18px;height:200px}
+.support.result .box .textarea-box .float{position:absolute;bottom:10px;right:20px;font-size:18px;letter-spacing:-0.04em;color:#bbb}
+.support.result .box .textarea-box .float span{font:inherit}
+/* 지원신청 완료 */
+.support.final .tit-st{margin:110px 0 20px}
+.support.final .btn-area{margin:40px 0 90px}
+/* 지원신청 폼*/
+.support .step {position:relative;top:-13px;width:830px;display:flex;flex-direction: row;flex-wrap: wrap;justify-content:flex-start;margin:120px  auto 100px;overflow:hidden;padding:13px 13px 0}
+.support .step.v2 {width:585px}
+.support .step::before{position:absolute;top:33px;left:50%;width:85%;height:1px;background:#d4d4d4;content:"";transform:translate(-50%,0)}
+.support .step li{position:relative;padding-top:62px;text-align:center;font-size:13px;color:#000;letter-spacing:-0.02em;line-height:20px;display:inline-block}
+.support .step li strong{font-weight:700}
+.support .step li + li{margin-left:193px}
+.support .step li::before{position:absolute;top:0;left:50%;;transform:translate(-50%,0);display:block;width:40px;height:40px;border:2px solid #0a91df;border-radius:20px;background:#fff;box-sizing:border-box;content:""}
+.support .step li.done::before{background:#68c3f8;border-color:#68c3f8}
+.support .step li.active::before{top:-13px;width:66px;height:66px;border-radius:33px;background:#cee9f9;border:7px solid #e2f2fb}
+.support .step li.active::after{position:absolute;top:0;left:50%;transform:translate(-50%,0);display:block;width:40px;height:40px;border-radius:50%;content:"";background:#0a91df;box-sizing: content-box;}
+.support .step li.active{color:#0a91df}
+
+.support .tit-st{font-size:36px;letter-spacing:-1px;font-weight:500;line-height:1.2em}
+
+.support .tit-st.nobtn{margin:0 0 48px}
+.support .subtit{font-size:18px;color:#666;letter-spacing:-1px;text-align:center}
+.support .subtit span.black{color:#000}
+.support .tit-st + .subtit{margin:20px 0 0}
+.support .btn-area.right{justify-content:flex-end}
+.support .btn-area + .form-style{margin:20px 0 0}
+
+.support  .form-style {border-top:1px solid #ddd;}
+.support  .form-style input,
+.support  .form-style label,
+.support  .form-style select,
+.support  .form-style .btn-file-download{font-size:18px}
+.support  .form-style .btn-file-download{color:#0590e1;width:100%;line-height:1.4em;overflow:hidden;text-overflow:ellipsis;text-align:left;white-space:nowrap;}
+.support  .form-style > li{border-bottom:1px solid #ddd}
+.support  .form-style > li > dl{display:table;table-layout: fixed;width:100%}
+.support  .form-style > li >  dl > *{display:table-cell;text-align:left;}
+.support  .form-style > li >  dl dt{padding:12px 0 0;width:211px;box-sizing:border-box;padding-left:30px;line-height:50px;font-size:18px;color:#000;letter-spacing:-0.04em;vertical-align:top}
+.support  .form-style > li >  dl dt .text,
+.support  .form-style > li >  dl dt span{display:inline-block;font:inherit;line-height:28px}
+.support  .form-style > li >  dl dd{padding:12px 0;vertical-align:middle;}
+
+.support  .input-file-box{position:relative;}
+.support  .input-file-box .btn + label{position:absolute;top:0;left:0;width:100%;height:100%;cursor:pointer}
+/* .support  .form-style > li >  dl dd input, 
+.support  .form-style > li >  dl dd textarea,
+.support  .form-style > li >  dl dd select{font-family:'Notosans'} */
+.support  .form-style > li >  dl dd p{text-align:left;font-size:15px;color:#222;letter-spacing:-0.04em;margin:10px 0 0;line-height:1.5em}
+.support  .form-style > li >  dl dd p strong {font:inherit;font-weight:700;color:#0590e1}
+.support  .form-style .textarea-box textarea{height:138px}
+.support  .form-style .input-box{display:inline-block;vertical-align:middle;width:377px}
+.support  .form-style .input-box label{overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.support  .form-style .input-box + *{margin-left:10px;}
+.support  .form-style .select-box label{width:100%;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;vertical-align:top}
+.support  .form-style .btn.fix{height:50px;line-height:48px;font-size:16px}
+.support  .form-style .radio-box{margin:8px 0}
+.support  .form-style .chk-box label{font-size:inherit}
+.support  .form-style .input-box label{color:#bbb;text-align:left;padding:0 18px;letter-spacing:-0.04em;line-height:50px}
+.support  .form-style .input-box input{letter-spacing:-0.04em}
+.support  .form-style .row{position:relative;display:flex;flex-direction: row;flex-wrap: wrap;width:100%;justify-content: flex-start;align-items: center;}
+.support  .form-style .row + .row{margin:10px 0 0}
+.support  .form-style .row .responsive-box{display:inline-block;vertical-align:middle}
+.support  .form-style .row .responsive-box > dl{display:table;}
+.support  .form-style .row .responsive-box >  dl > *{display:table-cell;text-align:left;}
+
+.support  .form-style .birth .select-box + .select-box{margin-left:10px}
+.support  .form-style .birth .select-box:nth-of-type(1){width:144px}
+.support  .form-style .birth .select-box:nth-of-type(2),
+.support  .form-style .birth .select-box:nth-of-type(3){width:105px}
+.support  .form-style .birth  span,
+.support  .form-style .number span,
+.support  .form-style .email  span{display:inline-block;vertical-align:middle}
+.support .form-style .number dt span{margin:0}
+.support  .form-style .birth .select-box + span{margin:0 30px 0 20px}
+.support  .form-style .birth .radio-box,
+.support .form-style .birth .radio-box + .radio-box,
+.support .form-style .birth .chk-box {margin-left:10px}
+.support  .form-style .name .input-box:nth-of-type(1){width:110px}
+.support  .form-style .name .input-box:nth-of-type(2){width:257px}
+.support  .form-style .name .input-box + .input-box{margin-left:10px}
+.support  .form-style .radio-box + .radio-box{margin-left:40px}
+.support  .form-style .number .input-box{width:119px}
+.support  .form-style .number  span,
+.support  .form-style .email  span{margin:0 15px}
+.support  .form-style .email .input-box{width:220px}
+.support  .form-style .email .select-box{width:154px;margin-left:10px}
+.support .form-style .input-box + .responsive-box{margin:0}
+.support .form-style .number .row .responsive-box dl > *{padding-top:0;padding-bottom:0}
+.support .form-style .number .row .responsive-box dt{width:100px}
+
+.support  .form-style .input-file-box{width:580px}
+.support  .form-style .input-file-box input[type="text"]{padding-right:160px;font-size:18px;box-sizing:border-box}
+.support  .form-style .input-file-box .btn-file{width:150px;text-align:center;border:1px solid #000;background:#000;color:#fff}
+.support  .form-style .input-file-box .btn-file:hover{background:#0590e1;border-color:#0590e1}
+.support   .input-file-box .btn-file.btn-black{background:#000;color:#fff}
+.support   .input-file-box .btn-file.btn-black:hover{background:#0590e1;border-color:#fff}
+
+.support  .form-style .adrs .input-box + *{margin-left:10px}
+.support  .form-style .adrs .btn-zip{width:150px}
+.support  .form-style .adrs .row .input-box{width:580px}
+.support  .form-style .adrs .row:first-child .input-box:nth-of-type(1){width:154px}
+.support  .form-style .adrs .row:first-child .input-box:nth-of-type(2){width:256px}
+
+.support  .form-style  .search .input-box + *{margin-left:10px}
+.support  .form-style  .search span{font-size:18px}
+.support  .form-style  .search .btn{width:150px}
+.support  .form-style  .search .row .input-box{width:580px}
+.support  .form-style  .search .row:first-child .input-box{width:220px}
+.support  .form-style  .search .row:nth-of-type(2){margin:0}
+.support  .form-style  .search .responsive-box{margin-left:20px;display:flex;align-items: center;}
+.support  .form-style  .search .responsive-box .input-box:nth-of-type(2){width:110px}
+
+.support  .form-style .searchList{display:none;margin:10px 0 0;width:100%;border:1px solid #ddd;border-top:1px solid;height:290px;margin-right:60px}
+.support  .form-style .searchList > .searchList-box{position:relative;height:100%;overflow:hidden;overflow-y:auto}
+.support  .form-style .searchList ul{padding-right:25px}
+.support  .form-style .searchList li{width:100%;border-top:1px solid #ddd;}
+.support  .form-style .searchList li:first-child{border:0}
+.support  .form-style .searchList button{font-size:18px;padding:0 18px;width:100%;height:60px;line-height:60px;box-sizing:border-box;text-align:left;cursor:pointer;background:#fff}
+.support  .form-style .searchList button:hover span,
+.support  .form-style .searchList button:hover{font-weight:700;text-decoration: underline;background:#f3f3f3}
+.support  .form-style .searchList button span{font:inherit;color:#666}
+.support  .form-style .searchList .ps { overflow: hidden !important; overflow-anchor: none;  -ms-overflow-style: none;  touch-action: auto;  -ms-touch-action: auto; }
+.support  .form-style .searchList .ps__rail-y { position: absolute; width:3px; right:0; background:transparent; opacity: 1}
+.support  .form-style .searchList .ps--active-y > .ps__rail-y {display: block; background:transparent; }
+.support  .form-style .searchList .ps__thumb-y { position: absolute; background:#c3c3c3; width:6px; right:9px; }
+
+.support  .form-style .schoolName .input-box{width:285px}
+.support  .form-style .schoolName .select-box{width:285px;}
+.support  .form-style .schoolName .input-box +*,
+.support  .form-style .schoolName .select-box +*{margin-left:10px}
+.support .form-style .schoolName .row:nth-of-type(2) .input-box{width:580px} 
+
+.support  .form-style .subject .input-box,
+.support  .form-style .subject .select-box {width:435px}
+
+.support  .form-style .career .select-box + .select-box{margin-left:10px}
+.support  .form-style .career .select-box:nth-of-type(1){width:154px;}
+.support  .form-style .career .select-box:nth-of-type(2){width:110px;}
+
+.support  .form-style .award dd  .select-box{width:154px}
+.support  .form-style .award dd  .select-box + *,
+.support  .form-style .award dd  .input-box+ *,
+.support  .form-style .award dd  .btn{margin-left:10px}
+.support  .form-style .award dd  .select-box:nth-of-type(2){width:110px}
+.support  .form-style .award dd  .input-box{width:140px}
+
+.support  .form-style .award .row .responsive-box{width:620px;margin:0}
+.support  .form-style .award .row .responsive-box dt,
+.support  .form-style .award .row .responsive-box dd{padding-top:0;padding-bottom:0}
+.support  .form-style .award .row .responsive-box dt:nth-of-type(1){width:98px}
+.support  .form-style .award .row .responsive-box dt:nth-of-type(2){width:117px}
+.support  .form-style .award .row .responsive-box dd:nth-of-type(1){width:140px}
+
+.support  .form-style .hope .row .responsive-box .select-box,
+.support  .form-style .hope .row .responsive-box .input-box{width:184px}
+.support  .form-style .hope .row .responsive-box dt,
+.support  .form-style .hope .row .responsive-box dd{padding:0;padding-bottom:0}
+.support  .form-style .hope .row .responsive-box dt{width:60px}
+.support  .form-style .hope .row .responsive-box dd:nth-of-type(1){width:212px}
+
+.support  .form-style .award .btn-add{display:none}
+.support  .form-style .award .active .btn-add{display:block}
+.support  .form-style .award .btn-delete{display:block}
+.support  .form-style .award .active .btn-delete{display:none}
+.support  .form-style .award .btn{width:100px}
+
+.support  .form-style .abroad dd  .select-box + *,
+.support  .form-style .abroad dd  .input-box+ *,
+.support  .form-style .abroad dd  span + *,
+.support  .form-style .abroad dd .btn{margin-left:10px}
+.support  .form-style .abroad  .select-box{width:154px}
+.support  .form-style .abroad  .input-box{width:94px}
+.support  .form-style .abroad .btn{width:100px}
+.support  .form-style .abroad .btn-add{display:none}
+.support  .form-style .abroad .active .btn-add{display:block}
+.support  .form-style .abroad .btn-delete{display:block}
+.support  .form-style .abroad .active .btn-delete{display:none}
+.support  .form-style + .btn-area{margin:100px 0 190px;}
+
+.support  .form-style .company dd  .select-box + *{margin-left:10px}
+.support  .form-style .company dd  .select-box{width:154px}
+.support  .form-style .company dd  .select-box:nth-of-type(1){width:230px}
+.support  .form-style .company dd  .input-box{width:219px}
+
+.support  .form-style .account dd .row:nth-of-type(1) .select-box + *{margin-left:10px}
+.support  .form-style .account dd .row:nth-of-type(1) .select-box{width:154px}
+.support  .form-style .account dd .row:nth-of-type(1) .input-box{width:415px}
+
+.support  .form-style .department dd  .select-box{width:154px}
+
+.support .file-list .title-area{position:relative;margin:70px 0 25px;text-align:left}
+.support .file-list .title-area .tit-st{font-size:24px;line-height:40px}
+.support .file-list .title-area .subtit{margin:0;font-size:18px;color:#666;text-align:left;line-height:30px}
+.support .file-list .title-area .btn-area.right{position:absolute;top:8px;right:24px;text-align:right}
+.support .file-list .form-style .input-file-box{width:100%}
+.support .file-list .form-style .input-file-box .btn-file{width:116px;text-align:center;font-size:16px;border:1px solid #0590e1;background:#0590e1;color:#fff}
+.support .file-list .form-style .input-file-box .btn-file:hover{background:#000;border-color:#000}
+
+.support .file-list .form-style li{padding-right:24px}
+
+.support .help-box{position:relative;display:inline-block;vertical-align: middle;line-height:18px;margin-left:5px}
+.support .help-box .btn-help{position:relative;width:18px;height:18px;padding-top:18px;box-sizing:border-box;overflow:hidden}
+.support .help-box .btn-help::after{display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/ico-help.png) no-repeat 0 0/cover;content:""}
+.support .help-box .btn-help + div{display:none;position:absolute;top:21px;left:-9px;padding-top:8px;z-index:1;width:437px}
+.support .help-box .btn-help + div::before{position:absolute;top:0;left:10px;width: 0;height: 0;border-style: solid; border-width: 0 8.5px 8px 8.5px; border-color: transparent transparent #000 transparent;content:""}
+.support .help-box .btn-help + div p{background:#000;color:#fff;padding:15px 0;text-align:center;font-size:15px;line-height:1.5em;width:auto}
+.support .help-box .btn-help:hover + div,
+.support .help-box .btn-help:focus + div{display:block}
+/* 학생명단 */
+.support .student-list {position:relative;margin:70px 0 0;}
+.support .student-list .tit-st{font-size:24px;line-height:40px;text-align:left}
+.support .student-list .tit-st + .scroll-box{margin:20px 0 0}
+.support .student-list .scroll-box{position:relative;width:100%;overflow:hidden;overflow-x:auto;padding-bottom:10px}
+.support .student-list .student-scroll-ps{width:100%}
+.support .student-list .student-scroll-ps > div .table-st{min-width:1116px}
+.support .student-list .ps__rail-y ,
+.support .student-list .ps--active-y > .ps__rail-y,
+.support .student-list .ps__thumb-y { display:none }
+.support .student-list .ps__rail-x {  position: absolute; height:8px; bottom:0 !important; opacity: 1;background:#f3f3f3;border-radius:4px}
+.support .student-list .ps__thumb-x { position: absolute; background:#000; height:8px; right:0;border-radius:4px}
+.support .student-list .scroll-box + .btn-area{margin:17px 0 0}
+/* table style */
+.support  .table-st{border-top:2px solid #000}
+.support  .table-st thead th{background:#f3f3f3}
+.support  .table-st th,
+.support  .table-st td{font-size:18px;text-align:center;letter-spacing:-0.04em;height:50px;vertical-align: middle;border-bottom:1px solid #ddd}
+.support  .table-st th{color:#333;padding:10px 0;line-height:26px;}
+.support  .table-st td{color:#666;padding:15px 7px}
+.support  .table-st td .input-box,
+.support  .table-st td .input-file-box{display:inline-block;vertical-align: middle;}
+.support  .table-st td .input-file-box .btn{position:static}
+.support .table-st  .input-box label{color:#bbb;text-align:left;letter-spacing:-0.04em;line-height:50px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.support .table-st .colum1{width:18.5%}
+.support .table-st .colum2{width:9%}
+.support .table-st .colum3{width:14%}
+.support .table-st .colum4{width:10%}
+.support .table-st .colum5{width:17%}
+.support .table-st .colum6{width:7.5%}
+.support .table-st .colum7{width:7.5%}
+.support .table-st .colum8{width:7.5%}
+.support .table-st .colum9{width:9.5%}
+.support  .table-st td.btnbox{padding:0 5px}
+.support  .table-st td:first-child{padding-left:28px;text-align:left} 
+.support  .table-st td:last-child{padding-right:28px;text-align:right}
+.support  .table-st td.school span{margin:0 5px}
+.support  .table-st td.school .input-box{width:44px} 
+.support  .table-st td.school .input-box input,
+.support  .table-st td.school .input-box label{padding:0 5px}
+.support  .table-st td.number .input-box{width:100%}
+.support  .table-st td.number span{margin:0 5px}
+.support  .table-st td.gender .select-box,
+.support  .table-st td.gender .select-box label{width:100%}
+.support  .table-st td .input-box{width:100%}
+.support  .table-st td .input-file-box .btn,
+.support  .table-st td .btn-delete{width:74px;font-size:16px;height:50px;line-height:48px}
+/* 본인인증 */
+.support.identify .tit-st{margin: 0 0 70px}
+.support.identify .tit-st2{text-align:left;font-size:24px;font-weight:700;letter-spacing:-1px;color:#111}
+.support.identify  .form-style .btn{width:150px}
+.support.identify  .form-style .time{display:inline-block;margin-left:10px;font:inherit;color:#222}
+.support.identify  .form-style .reg .input-box{width:219px}
+.support.identify  .box{margin:70px 0 0;text-align:left}
+.support.identify  .box + .box{margin:95px 0 0;}
+.support.identify  .box .tit{border-bottom:1px solid #ddd;font-size:24px;color:#111;letter-spacing:-1px;font-weight:500;line-height:33px;padding:0 0 24px;}
+.support.identify  .box .tit + .term-wrapper{margin-top:13px;}
+.support.identify  .term-wrapper{margin-left:30px;border:1px solid #ddd;padding:15px 20px}
+.support.identify  .term-wrapper .term-box{position:relative;height:210px;overflow-y:auto;padding:0 10px;font-size:16px;line-height:30px;color:#666;letter-spacing:-0.04em;}
+.support.identify  .term-wrapper .term-box strong{font:inherit;font-size:18px;color:#333;font-weight:500}
+/* scroll design */
+.support.identify  .term-wrapper .term-box .ps__rail-y { display: block; position: absolute; width:8px; right:0 !important; opacity: 1;background:#f3f3f3;border-radius:4px}
+.support.identify .term-wrapper .term-box .ps__thumb-y { position: absolute; background:#e0e0e0; width:8px; right:0;border-radius:4px}
+.support.identify .agree-box{position:relative;margin:13px 0 0;padding:13px 0 0;font-size:16px;letter-spacing:-1px;color:#777;line-height:34px;border-top:1px solid #ddd}
+.support.identify .agree-box br{display:none}
+.support.identify  .agree-box .chk-box{position:absolute;top:13px;right:0;}
+.support.identify  .agree-box .chk-box label{font-size:18px;color:#222}
+.support.identify  .agree-box + .agree-box{border:0;padding:0;margin-top:16px}
+.support.identify  .agree-box + .agree-box .chk-box{top:0}
+.support.identify .btn-area{margin:70px 0 125px;}
+
+.support  .form-style2 {margin:70px 0 0}
+.support  .form-style2 > li + li{margin:50px 0 0}
+.support  .form-style2 > li,
+.support  .form-style2 > li dl,
+.support  .form-style2 > li dl > *{width:100%;text-align:left}
+.support  .form-style2 > li dl dt{font-size:18px;line-height:1.5em;color:#111;letter-spacing:-1px}
+.support  .form-style2 > li dl dd{margin:20px 0 0}
+/* .support  .form-style2 > li input, 
+.support  .form-style2 > li textarea,
+.support  .form-style2 > li select{font-family:'Notosans'} */
+.support  .form-style2 .textarea-box .float{position:absolute;bottom:10px;right:20px;font-size:18px;letter-spacing:-0.04em;color:#bbb}
+.support  .form-style2 .textarea-box .float span{font:inherit}
+.support  .form-style2  + .btn-area{margin:86px 0 176px}
+/* 신청 확인 */
+.support.confirm .box{position:relative;margin:70px 0 0;padding-left:230px}
+.support.confirm .box .img{position:absolute;top:0;left:0;width:200px;height:0;padding-top:270px}
+.support.confirm .form-style .birth .input-box{width:110px}
+.support.confirm .form-style .birth .input-box:nth-of-type(1){width:154px}
+.support.confirm .form-style .row {min-height:50px}
+.support.confirm .form-style .row > .txt{padding-left:20px;font-size:18px;color:#000;letter-spacing:-0.04em;line-height:30px}
+.support.confirm .form-style .subject .input-box{width:220px}
+.support.confirm .form-style .career .input-box{width:110px}
+.support.confirm .form-style .career .input-box:nth-of-type(1){width:154px}
+.support.confirm .form-style .award .row .responsive-box{width:auto;margin-left:10px}
+.support.confirm .form-style .award dd > .row >.input-box:nth-of-type(1){width:154px}
+.support.confirm .form-style .award dd> .row >.input-box:nth-of-type(2){width:110px}
+.support.confirm .form-style .award .responsive-box .input-box{width:174px}
+.support.confirm .form-style .abroad .input-box{width:110px}
+.support.confirm .form-style .abroad .input-box:nth-of-type(1){width:154px}
+.support.confirm  .form-style .department .input-box{width:154px}
+.support.confirm  .form-style  .schoolName .input-box{width:220px}
+.support.confirm  .form-style  .schoolName .responsive-box .input-box:nth-of-type(2){width:110px}
+.support.confirm  .form-style .adrs .row:first-child .input-box:nth-of-type(2){width:416px}
+.support.confirm .form-style2{margin:80px 0 0;border-bottom:1px solid #ddd}
+.support.confirm .form-style2 > li{padding:25px 24px 30px;border-top:1px solid #ddd}
+.support.confirm .form-style2 > li + li{margin:0}
+.support.confirm .form-style2 .textarea-box textarea{color:#666}
+.support.confirm .sign-box{margin:44px 0 0;padding-right:24px}
+.support.confirm .sign-box p{text-align:right;font-size:18px;color:#111;line-height:1.5em}
+.support.confirm .sign-box p +p{margin:15px 0 0}
+.support.confirm .btn-area{margin:70px 0 150px}
+.support.confirm .file-list {margin-top:-1px}
+.support.confirm .file-list .form-style .input-box {width:100%}
+.support.confirm .form-style li{padding-right:24px}
+.support.confirm .form-style .account dd .row:nth-of-type(1) .input-box {width:100%}
+.support.confirm .form-style .input-file-box{width:100%}
+.support.confirm .available,
+.support.confirm .table-st td .filename,
+.support.confirm .form-style .input-file-box input{color:#0590e1}
+.support.confirm .table-st td .filename{font-size:16px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.support.confirm .table-st td.school .input-box{width:100%}
+.support.confirm .table-st .colum1{width:13%}
+.support.confirm .table-st .colum2{width:8.6%}
+.support.confirm .table-st .colum3{width:13%}
+.support.confirm .table-st .colum4{width:6.4%}
+.support.confirm .table-st .colum5{width:16%}
+.support.confirm .table-st .colum6{width:14.3%}
+.support.confirm .table-st .colum7{width:14.3%}
+.support.confirm .table-st .colum8{width:14.3%}
+.support.confirm .table-st td .input-box input, 
+.support.confirm .table-st td .input-box label{padding:0 10px;text-align:center}
+/* 서류제출 */
+.support.document .tit-st + .subtit{margin:25px 0 0}
+.support.document .subtit{font-size:20px;color:#222}
+.support.document .info-box{margin:45px 0 75px}
+.support.document .form-style .input-file-box{width:100%}
+.support.document .form-style .hasbtn .input-file-box{width:calc(100% - 126px);margin-right:10px}
+.support.document .form-style  .input-file-box .btn-file{width:116px;text-align:center;font-size:16px;border:1px solid #0590e1;background:#0590e1;color:#fff}
+.support.document .form-style  .input-file-box .btn-file:hover{background:#000;border-color:#000}
+.support.document .form-style  .btn-print{width:116px}
+.support.document .form-style li{padding-right:24px}
+.support.document .info-box p{font-size:18px;text-align:center;line-height:30px;color:#444;letter-spacing:-1px}
+.support.document .info-box p + p{margin:25px 0 0}
+.support.document .info-box p span{font:inherit;display:inline}
+.support.document .info-box p span.red{color:#e80404}
+.support.document .info-box p span.blue{color:#0590e1}
+.support.document .btn-area{margin:90px 0 150px}
+.support.document .file-list .title-area .btn-area.right{top:auto;bottom:0;margin:0}
+/* 두산 꿈나무 */
+.support.multicultural .tit-st + .form-style {margin:70px 0 0}
+.support.multicultural .file-list .title-area{padding-right:175px}
+.support.multicultural .file-list + .btn-area{margin:100px 0 123px}
+.support.confirm.multicultural .box{padding-left:0;padding-top:0} 
+/* 고교 */
+.support.award-high-school .tit-st + .form-style {margin:70px 0 0}
+.support.award-high-school .file-list .title-area{padding-right:175px}
+.support.award-high-school .student-list + .btn-area{margin:100px 0 123px}
+/* 대학 */
+.support.award-university .tit-st + .form-style {margin:70px 0 0}
+.support.award-university .file-list .title-area{padding-right:175px}
+.support.award-university .file-list + .btn-area{margin:100px 0 123px}
+.support.award-university .help-box .btn-help + div{width:370px;}
+.support.award-university .help-box .btn-help + div p{text-align:left;padding:15px 30px;line-height:25px}
+.support.confirm.award-university .file-list{margin:80px 0 0}
+/* 맞춤식도서 */
+.support.confirm.book .tit-st + .form-style {margin:70px 0 0}
+@media screen and (max-width:1280px) {/* laptop */
+.support > .inner_wrapper{padding:0 80px}
+.support.introduce > .inner_wrapper{padding:0 172px}
+.support.list .inner_wrapper{padding:0 80px}
+}
+@media screen and (max-width:1116px) {
+.support  .form-style .award .row .responsive-box{width:100%;margin:10px 0 0}
+.support .form-style .schoolName .chk-box{margin:10px 0}
+.support .form-style .schoolName .input-box{width:calc(50% - 10px)}
+.support .form-style .award .responsive-box dt{padding-left:0}
+.support .form-style .award .row .responsive-box dt:nth-of-type(1){width:90px}
+.support .form-style .award .row .responsive-box dt:nth-of-type(2){padding-left:10px;width:90px}
+.support .form-style .award .row .responsive-box dd:nth-of-type(1),
+.support .form-style .award dd .input-box{width:120px}
+}
+@media screen and (max-width:960px) {/* laptop */
+    #content.support .keyvisual{background:url(../images/sub/img-visual-support-t.jpg) no-repeat center/auto 100%}
+}
+@media screen and (max-width:768px) {/* tablet */
+/* 지원신청 랜딩 */
+.support.list  .application-list{margin:30px -9px  20px;}
+.support.list  .application-list li{width:calc(33.3% - 18px);margin:30px 9px}
+.support.list  .application-list li div{padding:15px 0 0}
+.support.list  .application-list li .tit{font-size:18px;}
+.support.list  .application-list li dl > *{font-size:13px;line-height:21px}
+.support.list  .application-list li dl dt{width:68px}
+.support.list  .application-list li .img{padding-top:171px}
+.support.list  .application-list li.finished{height:171px}
+.support.list  .application-list li .badge{font-size:14px;padding:0 9px;line-height:35px}
+.support.list  .application-list li.finished > div p{font-size:13px;line-height:22px}
+.support.list  .application-list li.finished > div .tit{font-size:18px}
+/* 지원공고 */
+.support.information .title-area{margin:110px 0 0;padding:30px 20px}
+.support.information .title-area h2{font-size:24px;}
+.support.information .title-area dl{margin:15px 0 0}
+.support.information .title-area dl> *{font-size:14px}
+.support.information .title-area dl dd{width:173px;margin-left:12px}
+.support.information .context-area{padding:35px 20px}
+.support.information .context-area div{font-size:14px;line-height:24px}
+.support.information .btn-area{margin:50px 0 60px}
+
+.support.information  .file-list dt{width:16.1%;font-size:14px;line-height:28px;}
+.support.information  .file-list ul {padding:10px 20px}
+.support.information  .file-list ul li{height:28px;line-height:28px}
+.support.information  .file-list ul li a{font-size:14px;}
+
+/* 지원신청 결과 */
+.support.result .tit-st{margin:55px 0 0}
+.support.result .tit-st + .subtit{margin:20px 0 0}
+.support.result .subtit{line-height:24px}
+.support.result .step{margin-top:30px}
+.support.result .step.v2 li + li{margin-left:100px}
+.support.result .btn-area{margin:50px 0}
+
+.support.result .tit-st2{font-size:14px}
+.support.result .box{width:100%;margin:40px auto 0;padding:0 46px}
+.support.result .box .textarea-box{margin:20px 0 0;}
+.support.result .box .textarea-box textarea{font-size:12px;height:150px}
+.support.result .box .textarea-box .float{bottom:5px;right:10px;font-size:12px;}
+
+/* 지원신청 완료 */
+.support.final .tit-st{margin:55px 0 15px}
+.support.final .btn-area{margin:40px 0 55px}
+/* 지원신청 폼 */
+.support .step {top:12px;padding:12px;width:560px;margin:34px  auto 50px}
+.support .step::before{top:32px;width:498px;}
+.support .step.v2 {width:409px}
+.support .step.v2::before {width:80%}
+.support .step li + li{margin-left:110px}
+.support .step li.active::before{top:-12px;width:63px;height:63px;border-radius:50%;border:6px solid #e2f2fb}
+
+.support .tit-st{font-size:24px}
+.support  .form-style {border-top:1px solid #ddd;}
+.support  .form-style > li > dl dt{padding-top:14px;width:142px;line-height:32px;font-size:13px;}
+.support .form-style > li > dl dt .text,
+.support  .form-style > li > dl dt span{line-height:18px}
+.support  .form-style > li > dl dd{padding:14px 0;}
+.support  .form-style > li > dl dd p{padding-left:10px;font-size:12px;margin:10px 0 0}
+.support  .form-style .textarea-box textarea{height:140px}
+.support  .form-style input,
+.support  .form-style label,
+.support  .form-style select,
+.support  .form-style textarea,
+.support .form-style .btn-file-download{font-size:12px}
+.support  .form-style .input-box{width:205px}
+.support  .form-style .btn.fix{height:30px;line-height:28px;font-size:12px}
+.support  .form-style .input-box label{padding:0 10px;line-height:32px}
+.support .form-style .input-file-box {width:340px}
+.support .form-style .input-file-box input[type="text"]{padding-right:90px;height:32px;line-height:30px}
+.support .form-style .input-file-box .btn-file{width:80px;height:32px;line-height:32px}
+.support  .form-style .input-box + *{margin-left:7px;}
+.support  .form-style .row + .row{margin:7px 0 0}
+.support  .form-style .radio-box{margin:5.5px 0}
+.support  .form-style .name .input-box:nth-of-type(1){width:64px}
+.support  .form-style .name .input-box:nth-of-type(2){width:134px}
+.support  .form-style .name .input-box + .input-box{margin-left:7px}
+
+.support  .form-style .birth .select-box + .select-box{margin-left:7px}
+.support  .form-style .birth .select-box:nth-of-type(1){width:86px}
+.support  .form-style .birth .select-box:nth-of-type(2),
+.support  .form-style .birth .select-box:nth-of-type(3){width:60px}
+
+.support  .form-style .radio-box + .radio-box{margin-left:16px}
+.support  .form-style .number .input-box{width:70px}
+.support  .form-style .number  span,
+.support  .form-style .email  span{margin:0 4px}
+.support  .form-style .email .input-box{width:125px}
+.support  .form-style .email .select-box{width:87px;margin-left:7px}
+.support .form-style .number .row .responsive-box{width:100%}
+.support .form-style .number .row .responsive-box dt{width:40px;padding-left:0}
+.support .form-style .number .row .responsive-box dd + dt{padding-left:10px}
+.support  .form-style .input-file-box{width:340px}
+.support  .form-style .input-file-box input[type="text"]{padding-right:80px;font-size:12px}
+
+.support  .form-style  .adrs .input-box + *{margin-left:7px}
+.support  .form-style  .adrs .btn-zip{width:80px}
+.support  .form-style  .adrs .row .input-box{width:340px}
+.support  .form-style  .adrs .row:first-child .input-box:nth-of-type(1){width:86px}
+.support  .form-style  .adrs .row:first-child .input-box:nth-of-type(2){width:160px}
+
+.support .form-style .search span{font-size:12px}
+.support  .form-style  .search .input-box + *{margin-left:7px}
+.support  .form-style  .search .btn{width:80px}
+.support  .form-style  .search .row .input-box{width:340px}
+.support  .form-style  .search .row:first-child .input-box{width:120px}
+.support .form-style .search .responsive-box {margin-left:7px;}
+.support .form-style .search .responsive-box .input-box:nth-of-type(2){width:70px}
+
+.support  .form-style .searchList{height:211px;margin-top:7px;margin-right:30px}
+.support  .form-style .searchList ul{padding-right:15px}
+.support  .form-style .searchList button{font-size:14px;padding:0 10px;height:43px;line-height:43px}
+.support  .form-style .searchList .ps__rail-y { width:3px; right:0;}
+.support  .form-style .searchList .ps__thumb-y {width:3px;right:4px; }
+
+.support  .form-style .schoolName .input-box{width:178px}
+.support  .form-style .schoolName .select-box{width:178px;}
+.support  .form-style .schoolName .row:nth-of-type(2) .input-box{width:100%}
+.support  .form-style .schoolName .input-box +*,
+.support  .form-style .schoolName .select-box +*{margin-left:7px}
+.support  .form-style .subject .input-box,
+.support  .form-style .subject .select-box{width:239px}
+
+.support  .form-style .career .select-box + .select-box{margin-left:7px}
+.support  .form-style .career .select-box:nth-of-type(1){width:86px;}
+.support  .form-style .career .select-box:nth-of-type(2){width:70px;}
+
+.support  .form-style .award dd  .select-box{width:86px}
+.support  .form-style .award dd  .select-box + *,
+.support  .form-style .award dd  .input-box+ *{margin-left:7px}
+.support  .form-style .award dd  .select-box:nth-of-type(2){width:70px}
+.support  .form-style .award dd  .input-box{width:70px}
+
+.support  .form-style .award .row + .row{margin:7px 0 0;}
+.support  .form-style .award .row .responsive-box {margin:7px 0 0}
+.support  .form-style .award .row .responsive-box dt{padding-left:0}
+.support  .form-style .award .row .responsive-box dt:nth-of-type(1){width:43px}
+.support  .form-style .award .row .responsive-box dt:nth-of-type(2){width:70px;padding-left:14px}
+.support  .form-style .award .row .responsive-box dd:nth-of-type(1){width:70px}
+.support  .form-style .award .row .responsive-box dd{padding-bottom:0}
+.support  .form-style .award .btn{width:80px}
+
+.support  .form-style .abroad dd  .select-box + *,
+.support  .form-style .abroad dd  .input-box+ *,
+.support  .form-style .abroad dd  span + *,
+.support  .form-style .abroad dd .btn{margin-left:7px}
+.support  .form-style .abroad  .select-box{width:100px}
+.support  .form-style .abroad  .input-box{width:60px}
+.support  .form-style .abroad .btn{width:80px}
+.support  .form-style + .btn-area{margin:50px 0}
+
+.support  .form-style .hope .row .responsive-box .select-box,
+.support  .form-style .hope .row .responsive-box .input-box{width:86px}
+.support  .form-style .hope .row .responsive-box dt{width:37px}
+.support  .form-style .hope .row .responsive-box dd:nth-of-type(1){width:100px}
+
+.support  .form-style .company dd  .select-box + *{margin-left:7px}
+.support  .form-style .company dd  .select-box{width:86px}
+.support  .form-style .company dd  .select-box:nth-of-type(1){width:150px}
+.support  .form-style .company dd  .input-box{width:126px}
+
+.support  .form-style .account dd .row:nth-of-type(1) .select-box + *{margin-left:7px}
+.support  .form-style .account dd .row:nth-of-type(1) .select-box{width:86px}
+.support  .form-style .account dd .row:nth-of-type(1) .input-box{width:248px}
+.support  .form-style .department dd .select-box{width:86px}
+
+.support .help-box{line-height:13px;margin-left:5px}
+.support .help-box .btn-help{width:13px;height:13px;padding-top:13px;}
+.support .help-box .btn-help::after{background:url(../images/ico-help-m.png) no-repeat 0 0/cover}
+.support .help-box .btn-help + div{top:19px;left:-10px;padding-top:6px;width:329px}
+.support .help-box .btn-help + div::before{left:10px;border-width: 0 7px 6px 7px; }
+.support .help-box .btn-help + div p{padding:10px 0;font-size:12px}
+
+.support .file-list .title-area{margin:60px 0 25px}
+.support .file-list .title-area .tit-st{font-size:18px;line-height:22px;margin:0 0 5px}
+.support .file-list .title-area .subtit{font-size:12px;line-height:17px;letter-spacing:-1px}
+.support .file-list .title-area .btn-area.right{top:auto;bottom:0;right:30px}
+.support .file-list .form-style  .input-file-box .btn-file{width:80px;font-size:12px}
+.support .file-list .form-style li{padding-right:30px}
+
+/* 학생명단 */
+.support .student-list{margin:60px 0 0;}
+.support .student-list .tit-st{font-size:18px;line-height:30px}
+.support .student-list .tit-st + .scroll-box{margin:25px 0 0}
+.support .student-list .student-scroll-ps > div .table-st{min-width:668px}
+.support .student-list .scroll-box + .btn-area{margin:30px 0 0}
+
+/* table style */
+.support  .table-st th,
+.support  .table-st td{font-size:12px;height:32px}
+.support  .table-st th{font-size:13px;padding:12px 0;line-height:18px;}
+.support  .table-st td{padding:14px 3px}
+.support .table-st  .input-box label{line-height:32px}
+.support .table-st .colum1{width:17%}
+.support .table-st .colum2{width:9%}
+.support .table-st .colum3{width:15%}
+.support .table-st .colum4{width:9%}
+.support .table-st .colum5{width:17.5%}
+.support .table-st .colum6{width:8%}
+.support .table-st .colum7{width:8%}
+.support .table-st .colum8{width:8%}
+.support .table-st .colum9{width:9%}
+.support  .table-st td:first-child{padding-left:10px;padding-right:0} 
+.support  .table-st td:last-child{padding-right:10px;}
+.support  .table-st td.school span{margin:0 4px}
+.support  .table-st td.school .input-box{width:24px} 
+.support  .table-st td.school .input-box input,
+.support  .table-st td.school .input-box label{padding:0}
+.support  .table-st .input-box label, 
+.support  .table-st input[type="text"]{padding:0 8px}
+.support  .table-st td .input-file-box{width:100%}
+.support  .table-st td .input-file-box .btn,
+.support  .table-st td .btn-delete{width:100%;font-size:12px;height:32px;line-height:30px}
+
+.support.identify .tit-st{margin: 0 0 45px}
+.support.identify  .form-style .btn{width:95px}
+.support.identify  .form-style .time{margin-left:7px}
+.support.identify  .form-style .reg .input-box{width:125px}
+.support.identify  .box{margin:60px 0 0}
+.support.identify  .box + .box{margin:75px 0 0;}
+.support.identify .box .tit{font-size:18px;line-height:25px;padding:0 0 20px;}
+.support.identify .box .tit + .term-wrapper{margin-top:14px;}
+.support.identify .term-wrapper{margin-left:26px;padding:5px 10px}
+.support.identify .term-wrapper .term-box{height:118px;padding:0 5px;font-size:13px;line-height:21px;}
+.support.identify .term-wrapper .term-box strong{font:inherit;font-size:11px;font-weight:500}
+/* scroll design */
+.support.identify .term-wrapper .term-box .ps__rail-y,
+.support.identify .term-wrapper .term-box .ps__thumb-y {  width:6px; border-radius:3px}
+.support.identify .agree-box{margin:14px 0 0;padding:14px 0 0;font-size:12px;line-height:18px}
+.support.identify .agree-box .chk-box{top:14px;}
+.support.identify .agree-box .chk-box label{font-size:13px; background-size: auto 18px !important;padding-left:28px;min-height:18px;line-height:18px;}
+.support.identify .agree-box + .agree-box{margin-top:14px}
+.support.identify .btn-area{margin:50px 0}
+/* 자기소개서 */
+.support .subtit{font-size:13px}
+.support .tit-st + .subtit{margin:10px 0 0}
+#content.support.introduce > .inner_wrapper{padding:0 80px}
+.support.introduce .textarea-box textarea{height:179px}
+.support  .form-style2 > li input, 
+.support  .form-style2 > li label,
+.support  .form-style2 > li textarea,
+.support  .form-style2 > li select{font-size:14px}
+.support  .form-style2 {margin:40px 0 0}
+.support  .form-style2 > li + li{margin:60px 0 0}
+.support  .form-style2 > li dl dt{font-size:13px;}
+.support  .form-style2 > li dl dd{margin:10px 0 0}
+.support  .form-style2 .textarea-box .float{bottom:5px;right:10px;font-size:12px;}
+.support  .form-style2  + .btn-area{margin:54px 0 70px}
+/* 신청확인 */
+.support.confirm .box{margin:50px 0 0;padding-left:162px}
+.support.confirm .box .img{width:126px;padding-top:170px}
+.support.confirm  .form-style .birth .input-box{width:60px}
+.support.confirm  .form-style .birth .input-box:nth-of-type(1){width:87px}
+.support.confirm  .form-style .row {min-height:32px}
+.support.confirm  .form-style .row > .txt{padding-left:12px;font-size:12px;line-height:32px}
+.support.confirm  .form-style .subject .input-box{width:240px}
+.support.confirm  .form-style .career .input-box{width:70px}
+.support.confirm  .form-style .career .input-box:nth-of-type(1){width:87px}
+.support.confirm  .form-style .award dd>.row>.input-box:nth-of-type(1){width:87px}
+.support.confirm  .form-style .award dd>.row>.input-box:nth-of-type(2){width:70px}
+.support.confirm  .form-style .award .row .responsive-box{margin-left:0}
+.support.confirm  .form-style .award .responsive-box .input-box{width:121px}
+.support.confirm  .form-style .abroad .input-box{width:70px}
+.support.confirm  .form-style .abroad .input-box:nth-of-type(1){width:87px}
+.support.confirm  .form-style .department .input-box{width:86px}
+.support.confirm  .form-style  .schoolName .input-box{width:118px}
+.support.confirm  .form-style  .schoolName .responsive-box .input-box:nth-of-type(2){width:44px}
+.support.confirm  .form-style .adrs .row:first-child .input-box:nth-of-type(2){width:247px}
+.support.confirm  .form-style2{margin:63px 0 0}
+.support.confirm  .form-style2 > li{padding:25px 30px 30px}
+.support.confirm   .sign-box{margin:40px 0 0;padding-right:30px}
+.support.confirm .form-style2 > li textarea{font-size:13px;height:179px}
+.support.confirm   .sign-box p{font-size:14px;}
+.support.confirm   .sign-box p +p{margin:10px 0 0}
+.support.confirm  .btn-area{margin:80px 0 60px}
+
+.support.confirm .form-style li{padding-right:30px}
+.support.confirm  .table-st td .filename{font-size:12px;}
+.support.confirm .table-st .colum1{width:12%}
+.support.confirm .table-st .colum2{width:8%}
+.support.confirm .table-st .colum3{width:13%}
+.support.confirm .table-st .colum4{width:5%}
+.support.confirm .table-st .colum5{width:16%}
+.support.confirm .table-st .colum6{width:15%}
+.support.confirm .table-st .colum7{width:15%}
+.support.confirm .table-st .colum8{width:14.6%}
+.support.confirm .table-st td:first-child{padding-right:3px}
+.support.confirm .table-st td .input-box input, 
+.support.confirm .table-st td .input-box label{padding:0 5px}
+/* 서류제출 */
+.support.document .subtit{font-size:16px}
+.support.document .tit-st + .subtit{margin:15px 0 0}
+.support.document .info-box{margin:40px 0 60px}
+.support.document .form-style .hasbtn .input-file-box{width:calc(100% - 87px);margin-right:7px}
+.support.document  .form-style  .input-file-box .btn-file{width:80px;font-size:12px}
+.support.document  .form-style  .btn-print{width:80px;line-height:30px;height:32px}
+.support.document .form-style li{padding-right:30px}
+.support.document .info-box p{font-size:13px;line-height:20px}
+.support.document .btn-area{margin:75px 0 50px}
+.support.confirm .form-style .textarea-box textarea{height:190px}
+/* 두산 꿈나무 */
+.support.multicultural .tit-st + .form-style {margin:40px 0 0}
+.support.multicultural .file-list .title-area{padding-right:175px}
+.support.multicultural .file-list + .btn-area{margin:50px 0 70px}
+/* 고교 */
+.support.award-high-school .tit-st + .form-style {margin:40px 0 0}
+.support.award-high-school .file-list .title-area{padding-right:175px}
+.support.award-high-school .student-list + .btn-area{margin:50px 0 60px}
+/* 대학 */
+.support.award-university .tit-st + .form-style {margin:40px 0 0}
+.support.award-university .file-list .title-area{padding-right:175px}
+.support.award-university .file-list + .btn-area{margin:80px 0 70px}
+.support.award-university .help-box .btn-help + div{width:290px}
+.support.award-university .help-box .btn-help + div p{padding:10px 20px;line-height:17px}
+.support.confirm.award-university .file-list{margin:63px 0 0}
+}
+@media screen and (max-width:766px) {  /* mobile 1*/
+    #content.support .keyvisual{background:url(../images/sub/img-visual-support-m.png) no-repeat center/auto 100%}
+
+}
+@media screen and (max-width:640px) {  /* mobile 2*/
+/* 지원신청 랜딩 */
+.support.list  .application-list{margin:30px 0  20px;}
+.support.list  .application-list li{width:100%;margin:30px 0}
+.support.list  .application-list li div{padding:15px 0 0}
+/* .support.list  .application-list li .tit{font-size:18px;}
+.support.list  .application-list li dl > *{font-size:13px;line-height:21px} */
+.support.list  .application-list li dl dt{width:70px}
+/* .support.list  .application-list li .img{padding-top:17 1px} */
+.support.list  .application-list li .badge{font-size:14px;padding:0 10px;}
+/* .support.list  .application-list li.finished > div p{font-size:13px;line-height:22px}
+.support.list  .application-list li.finished > div .tit{font-size:18px} */
+ /* 지원공고 */
+.support.information .title-area{margin:60px 0 0;padding:30px 0}
+.support.information .title-area h2{font-size:20px;}
+.support.information .title-area dl{margin:15px 0 0;overflow:hidden;display:flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;width:100%;}
+.support.information .title-area dl> *{font-size:13px;line-height:23px;}
+.support.information .title-area dl dt{width:70px}
+.support.information .title-area dl dd{width:calc(100% - 70px);margin:0}
+.support.information .context-area{padding:35px 0}
+.support.information .context-area div{font-size:13px;line-height:23px}
+.support.information .btn-area{margin:50px 0}
+.support.information  .file-list dt{width:75px;font-size:13px;line-height:26px;}
+.support.information  .file-list ul {padding:10px 15px}
+.support.information  .file-list ul li{height:26px;line-height:26px}
+.support.information  .file-list ul li a{font-size:13px;}
+
+/* 지원신청 결과 */
+.support.result .subtit{line-height:22px}
+.support.result .step{margin-top:40px}
+.support.result .step.v2 li + li{margin-left:50px}
+.support.result .btn-area{margin:50px 0 }
+
+.support.result .tit-st2{font-size:14px;line-height:23px}
+.support.result .box{width:100%;margin:50px auto 0;padding:0}
+.support.result .box .textarea-box{margin:15px 0 0;}
+.support.result .box .textarea-box textarea{font-size:14px;height:170px}
+.support.result .box .textarea-box .float{bottom:5px;right:10px;font-size:12px;}
+/* 지원신청 완료 */
+.support.final .tit-st{margin:55px 0 15px}
+.support.final .subtit{line-height:20px}
+.support.final .btn-area{margin:45px 0 50px}
+
+/* 지원신청 폼 */ 
+.support .step {top:-10px;padding: 10px 10px 0;width:100%;justify-content: center;margin:50px  auto 40px}
+.support .step::before{top:25px;width:230px;}
+.support .step li{font-size:12px;padding-top:52px}
+.support .step li + li{margin-left:26px}
+.support .step li.active::after,
+.support .step li::before{width:30px;height:30px}
+.support .step li.active::before{top:-10px;width:50px;height:50px;border-radius:50%;border:5px solid #e2f2fb}
+.support .step.v2{width:100%}
+.support .step.v2::before{width:230px;}
+.support .step.v2 li+ li{margin-left:60px}
+.support .tit-st.nobtn,
+.support .tit-st{font-size:20px;margin:0 0 40px}
+.support .tit-st + .btn-area .btn-download{width:auto}
+.support  .form-style {border-top:1px solid #ddd;}
+.support  .form-style > li{padding:20px 0 25px}
+.support  .form-style > li > dl,
+.support  .form-style > li > dl >*{display:block;width:100%}
+.support  .form-style > li > dl dt{padding:0;width:auto;line-height:24px;font-size:14px;}
+.support  .form-style > li > dl dt span{line-height:18px}
+.support  .form-style > li > dl dd{padding:10px 0 0;}
+.support  .form-style > li > dl dd p{padding-left:10px;font-size:13px;margin:10px 0 0}
+.support  .form-style .textarea-box textarea{height:380px}
+.support  .form-style input,
+.support  .form-style label,
+.support  .form-style select,
+.support  .form-style textarea,
+.support  .form-style .btn-file-download{font-size:14px;}
+.support  .form-style input,
+.support  .form-style select,
+.support  .form-style .input-box label,
+.support  .form-style .select-box label{height:50px;line-height:48px}
+/* .support  .form-style .select-box label {height:30px;line-height:30px} */
+.support  .form-style .input-box{width:100%}
+.support  .form-style .btn.fix{height:50px;line-height:48px;font-size:14px}
+.support  .form-style .input-box label{padding:0 10px;line-height:50px}
+.support  .form-style .input-file-box{width:100%}
+.support .form-style .input-file-box input[type="text"]{padding-right:83px;height:50px;line-height:48px;font-size:14px}
+.support .form-style .input-file-box .btn-file{width:70px;height:50px;line-height:48px}
+.support  .form-style .row + .row{margin:10px 0 0}
+.support  .form-style  .chk-box{position:absolute;top:-40px;right:0;}
+.support  .form-style .chk-box input + label{font-size:12px; background-size: auto 21px !important;padding-left:30px;min-height:21px;line-height:21px;}
+.support  .form-style .radio-box{margin:11.5px 0}
+.support  .form-style .name .input-box:nth-of-type(1){width:128px}
+.support  .form-style .name .input-box:nth-of-type(2){width:100%}
+.support  .form-style .name .input-box + .input-box{margin:0;margin-top:10px}
+.support  .form-style .input-box + *{margin:0;margin-top:10px}
+
+.support  .form-style .birth dt br{display:none}
+.support  .form-style .birth .select-box + .select-box{margin-left:7px}
+.support  .form-style .birth .select-box:nth-of-type(1){width:100%;margin:0 0 7px}
+.support  .form-style .birth .select-box:nth-of-type(2){margin-left:0}
+.support  .form-style .birth .select-box:nth-of-type(2),
+.support  .form-style .birth .select-box:nth-of-type(3){width:calc(50% - 3.5px)}
+.support .form-style .number .row .responsive-box  dl,
+.support .form-style .number .row .responsive-box  dl > *{display:block;padding:0}
+.support .form-style .number .row .responsive-box dd .input-box{width:100%}
+.support .form-style .number .row .responsive-box dt,
+.support .form-style .number .row .responsive-box dd + dt{margin:10px 0 0;padding:0}
+.support .form-style .number dt br{display:none}
+.support  .form-style .radio-box + .radio-box{margin-left:15px}
+.support  .form-style .number .input-box{width:calc(33.3% - 13px)}
+.support  .form-style .number.score .input-box{width:80px}
+.support  .form-style .number  span,
+.support  .form-style .email  span{margin:0 6px}
+.support  .form-style .email .input-box{width:calc(50% - 13px)}
+.support  .form-style .email .select-box{width:100%;margin-left:0}
+
+.support  .form-style  .adrs .input-box + *{margin-left:0}
+.support  .form-style  .adrs .btn-zip{position:absolute;top:-10px;left:138px;width:auto}
+.support  .form-style  .adrs .row .input-box{width:100%}
+.support  .form-style  .adrs .row:first-child .input-box:nth-of-type(1){width:128px}
+.support  .form-style  .adrs .row:first-child .input-box:nth-of-type(2){width:100%}
+.support .form-style .adrs .chk-box{top:-152px;margin:0}
+
+.support .form-style .search span{font-size:14px}
+.support  .form-style  .search .input-box + *{margin-left:10px}
+.support  .form-style  .search .btn{margin-top:0;width:auto}
+.support  .form-style  .search .row .input-box{width:100%}
+.support  .form-style  .search .row:first-child .input-box{width:128px}
+.support .form-style .search .responsive-box {width:100%;margin:10px 0 0;}
+.support .form-style .search .responsive-box .input-box:nth-of-type(2){width:88px;margin-top:0}
+
+.support  .form-style .searchList{margin-right:0;margin-top:10px;}
+.support  .form-style .searchList ul{padding-right:10px}
+.support  .form-style .searchList .ps__rail-y { width:2px; right:0;}
+.support  .form-style .searchList .ps__thumb-y {width:2px;right:2px; }
+
+.support  .form-style .schoolName .input-box{width:100%}
+.support  .form-style .schoolName .input-box +*,
+.support  .form-style .schoolName .select-box +*{margin-left:0}
+.support  .form-style .schoolName .select-box{width:100%}
+.support  .form-style .subject .input-box,
+.support  .form-style .subject .select-box{width:100%}
+
+.support  .form-style .career .select-box + .select-box{margin-left:10px}
+.support  .form-style .career .select-box:nth-of-type(1){width:55.5%;}
+.support  .form-style .career .select-box:nth-of-type(2){width:calc(44.5% - 10px);}
+
+.support  .form-style .award dd  .select-box{width:55.5%;}
+.support  .form-style .award dd  .select-box +  .select-box{margin-left:10px}
+.support  .form-style .award dd  .select-box + *,
+.support  .form-style .award dd  .input-box+ *{margin-left:0}
+.support  .form-style .award dd  .select-box:nth-of-type(2){width:calc(44.5% - 10px);}
+.support  .form-style .award dd  .input-box{width:100%}
+
+.support  .form-style .award .row{position:static}
+.support  .form-style .award .row + .row{margin:10px 0 0;}
+.support  .form-style .award .row .responsive-box {position:relative;margin:10px 0 0;padding-bottom:60px}
+.support  .form-style .award .row .responsive-box  dl{display:flex;flex-direction: row;flex-wrap: wrap;}
+.support  .form-style .award .row .responsive-box  dl > *{display:inline-block;vertical-align:top}
+.support  .form-style .award .row .responsive-box dd:nth-of-type(1),
+.support  .form-style .award .row .responsive-box dd{width:calc(100% - 80px)}
+.support  .form-style .award .row .responsive-box dt{line-height:50px}
+.support  .form-style .award .row .responsive-box dt:nth-of-type(1),
+.support  .form-style .award .row .responsive-box dt:nth-of-type(2){width:80px;padding-left:10px}
+.support  .form-style .award .row .responsive-box dt:nth-of-type(1),
+.support  .form-style .award .row .responsive-box dd:nth-of-type(1){margin-bottom:10px}
+.support  .form-style .award .btn{position:absolute;bottom:0;left:0;width:100%;margin:0}
+
+.support  .form-style .abroad dd  .select-box + *,
+.support  .form-style .abroad dd  .input-box+ *,
+.support  .form-style .abroad dd  span + *{margin-left:10px}
+.support  .form-style .abroad  .select-box{width:51.3%}
+.support  .form-style .abroad  .input-box{width:calc(48.7% - 33px)}
+.support  .form-style .abroad dd .btn{width:100%;margin:10px 0 0}
+
+.support  .form-style .hope .row .responsive-box {width:100%}
+.support  .form-style .hope .row .responsive-box  dl{display:flex;flex-direction: row;flex-wrap: wrap;width:100%;align-items: center;}
+.support  .form-style .hope .row .responsive-box  dl > *{display:inline-block;}
+.support  .form-style .hope .row .responsive-box .select-box,
+.support  .form-style .hope .row .responsive-box .input-box{width:100%}
+.support  .form-style .hope .row .responsive-box dt{width:80px}
+.support  .form-style .hope .row .responsive-box dd:nth-of-type(1),
+.support  .form-style .hope .row .responsive-box dd{width:calc(100% - 80px)}
+.support  .form-style .hope .row .responsive-box dt:nth-of-type(1),
+.support  .form-style .hope .row .responsive-box dd:nth-of-type(1){margin:0 0 10px}
+
+.support  .form-style .company dd  .select-box + *{margin:10px 0 0}
+.support  .form-style .company dd  .select-box{width:128px}
+.support  .form-style .company dd  .select-box:nth-of-type(1){width:180px}
+.support  .form-style .company dd  .input-box{width:100%}
+
+.support  .form-style .account dd .row:nth-of-type(1) .select-box + *{margin:10px 0 0}
+.support  .form-style .account dd .row:nth-of-type(1) .select-box{width:128px}
+.support  .form-style .account dd .row:nth-of-type(1) .input-box{width:100%}
+.support  .form-style .department  dd .select-box {width:130px}
+.support .help-box .btn-help{width:16px;height:16px;padding-top:16px}
+.support .help-box .btn-help::after{top:1px;left:1px;width:14px;height:14px}
+.support .help-box .btn-help + div{left:-60px;width:195px}
+.support .help-box .btn-help + div::before{left:60px}
+.support .help-box .btn-help + div p{padding:10px 20px;font-size:12px;text-align:left}
+
+.support  .form-style + .btn-area{margin:50px 0}
+
+.support .file-list .tit-st{line-height:1.5em}
+.support .file-list .subtit{line-height:24px}
+.support .file-list .form-style  .input-file-box .btn-file{width:73px;font-size:14px}
+.support .file-list .form-style li{padding-right:0}
+.support .file-list .title-area .btn-area.right{right:0}
+
+/* 학생명단 */
+.support .student-list .tit-st{margin:0}
+.support .student-list .scroll-box {padding-bottom:43px}
+.support .student-list .ps__rail-x {height:3px;border-radius:1.5px}
+.support .student-list .ps__thumb-x {height:3px;border-radius:1.5px}
+.support .student-list .btn-add{width:86px}
+.support .student-list .student-scroll-ps > div .table-st{width:1116px}
+/* 모바일 스크롤 가이드  */
+.support .student-list .ico_drag {display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;}
+.support .student-list .ico_drag::before {
+	width: 68px;padding-top:68px;
+	transform: translate3d(-64px, 0, 0);
+	animation:guide 1.3s ease-in-out infinite;
+	-ms-animation:guide 1.3s ease-in-out infinite;
+	-webkit-animation-delay:1s;
+	-moz-animation-delay:1s;
+	-o-animation-delay:1s;
+	animation-delay:0.5s;
+    animation-direction: alternate;
+    background:url(../images/ico_drag.png) no-repeat 0 0/100% auto;
+    content:"";display:block
+}
+@keyframes guide {
+    0% { transform: translate3d(-64px, 0, 0); }
+    100% { transform: translate3d(0px, 0, 0); }
+}
+/* table style */
+.support  .table-st input,
+.support  .table-st label,
+.support  .table-st select,
+.support  .table-st textarea{font-size:14px;}
+.support  .table-st input,
+.support  .table-st select,
+.support  .table-st .input-box label,
+.support  .table-st .select-box label{height:50px;line-height:48px}
+
+.support  .table-st th,
+.support  .table-st td{font-size:14px;height:50px}
+.support  .table-st th{font-size:13px;padding:12px 0;line-height:18px;}
+.support  .table-st td{padding:14px 7px}
+.support .table-st  .input-box label{line-height:50px}
+.support .table-st .colum1{width:17%}
+.support .table-st .colum2{width:9%}
+.support .table-st .colum3{width:15%}
+.support .table-st .colum4{width:9%}
+.support .table-st .colum5{width:17.5%}
+.support .table-st .colum6{width:8%}
+.support .table-st .colum7{width:8%}
+.support .table-st .colum8{width:8%}
+.support .table-st .colum9{width:9%}
+.support  .table-st td:first-child{padding-left:10px;padding-right:0} 
+.support  .table-st td:last-child{padding-right:10px;}
+.support  .table-st td.school span{margin:0 5px}
+.support  .table-st td.school .input-box{width:52px} 
+.support  .table-st td.school .input-box input,
+.support  .table-st td.school .input-box label{padding:0 10px}
+.support  .table-st .input-box label, 
+.support  .table-st input[type="text"]{padding:0 10px}
+.support  .table-st td .input-file-box{width:100%}
+.support  .table-st td .input-file-box .btn,
+.support  .table-st td .btn-delete{width:100%;font-size:14px;height:50px;line-height:48px}
+
+.support.identify .tit-st{margin: 0 0 40px}
+.support.identify  .form-style .btn{width:100%}
+.support.identify  .form-style .time{position:relative;top:10px;margin-left:0;text-align:center;width:100%;line-height:1.5em}
+.support.identify  .form-style .reg .input-box{width:100%}
+.support.identify  .box{margin:70px 0 0}
+.support.identify  .box + .box{margin:75px 0 0;}
+.support.identify .box .tit{margin:47px 0 0;}
+.support.identify .box .tit + .term-wrapper{margin-top:15px;}
+.support.identify .term-wrapper{margin:0 6px;padding:5px}
+.support.identify .term-wrapper .term-box{padding:0 5px;}
+/* scroll design */
+.support.identify .term-wrapper .term-box .ps__rail-y,
+.support.identify .term-wrapper .term-box .ps__thumb-y {  width:5px; border-radius:2.5px}
+.support.identify .agree-box{margin:15px 0 0;padding:12px 0 0;font-size:14px;line-height:24px}
+.support.identify .agree-box br{display:block}
+.support.identify .agree-box .chk-box{position:static;display:block;top:0;margin:14px 0 0}
+.support.identify .agree-box .chk-box label{display:inline-block}
+.support.identify .agree-box + .agree-box{margin-top:15px}
+/* 자기소개서 */
+.support .subtit{font-size:14px}
+.support .tit-st + .subtit{margin:10px 0 0}
+.support.introduce .tit-st{margin:0}
+#content.support.introduce > .inner_wrapper{padding:0 16px}
+.support  .form-style2 > li input, 
+.support  .form-style2 > li label,
+.support  .form-style2 > li textarea,
+.support  .form-style2 > li select{font-size:12px}
+.support  .form-style2 {margin:40px 0 0}
+.support  .form-style2 > li + li{margin:60px 0 0}
+.support  .form-style2 > li dl dt{font-size:14px;}
+.support  .form-style2 > li dl dd{margin:10px 0 0}
+.support  .form-style2 .textarea-box .float{bottom:5px;right:10px;font-size:12px;}
+.support  .form-style2  + .btn-area{margin:44px 0 80px}
+/* 신청확인 */
+.support.confirm .box{margin:40px 0 0;padding-top:158px;padding-left:0}
+.support.confirm .box .img{top:0;left:50%;transform:translate(-50%,0);width:97px;padding-top:131px}
+.support.confirm .form-style .birth .input-box{width:calc(50% - 5px)}
+.support.confirm .form-style .birth .input-box:nth-of-type(1){width:100%}
+.support.confirm .form-style .birth .input-box:nth-of-type(3){margin-left:10px}
+.support.confirm .form-style .row {min-height:30px}
+.support.confirm .form-style .row > .txt{padding-left:10px;font-size:14px;line-height:50px}
+.support.confirm .form-style .subject .input-box{width:100%}
+.support.confirm .form-style .career .input-box + .input-box{margin:0;margin-left:10px;}
+.support.confirm .form-style .career .input-box{width:calc(44.5% - 10px)}
+.support.confirm .form-style .career .input-box:nth-of-type(1){width:55.5%}
+.support.confirm .form-style .award dd>.row>.input-box:nth-of-type(1){width:55.5%}
+.support.confirm .form-style .award dd>.row>.input-box:nth-of-type(2){margin:0;margin-left:10px;width:calc(44.5% - 10px)}
+.support.confirm .form-style .award .row .responsive-box{width:100%;padding:0;margin-left:0}
+.support.confirm .form-style .award .responsive-box .input-box{width:100%}
+.support.confirm .form-style .abroad .input-box + .input-box{margin:0;margin-left:10px;}
+.support.confirm .form-style .abroad .input-box{width:calc(44.5% - 40px)}
+.support.confirm .form-style .abroad .input-box:nth-of-type(1){width:55.5%}
+.support.confirm .form-style .department .input-box {width:128px}
+.support.confirm  .form-style  .schoolName .input-box {width:100%}
+.support.confirm  .form-style  .schoolName .responsive-box{margin:10px 0 0;width:100%;display:flex;flex-direction: row;justify-content: flex-start;align-items: center;}
+.support.confirm  .form-style  .schoolName .responsive-box .input-box:nth-of-type(2){margin:0 10px ;width:80px}
+.support.confirm  .form-style .adrs .row:first-child .input-box:nth-of-type(2){width:100%}
+.support.confirm .form-style2{margin:63px 0 0}
+.support.confirm .form-style2 > li{padding:20px 0 25px}
+.support.confirm .form-style2 > li textarea{font-size:14px;height:322px}
+
+.support.confirm .sign-box{margin:40px 0 0;padding-right:0}
+.support.confirm .sign-box p{font-size:14px;}
+.support.confirm .sign-box p +p{margin:10px 0 0}
+
+.support.confirm .btn-area{margin:50px 0}
+
+.support.confirm .form-style .textarea-box textarea{height:100px}
+.support.confirm .form-style li{padding-right:0}
+
+.support.confirm .table-st td .filename{font-size:14px;}
+.support.confirm .table-st .colum1{width:10%}
+.support.confirm .table-st .colum2{width:8.4%}
+.support.confirm .table-st .colum3{width:10%}
+.support.confirm .table-st .colum4{width:6.4%}
+.support.confirm .table-st .colum5{width:12%}
+.support.confirm .table-st .colum6{width:17.7%}
+.support.confirm .table-st .colum7{width:17.7%}
+.support.confirm .table-st .colum8{width:17.7%}
+.support.confirm .table-st td:first-child{padding-right:7px}
+.support.confirm .table-st td .input-box input, 
+.support.confirm .table-st td .input-box label{padding:0 10px}
+/* 서류제출 */
+.support.document .tit-st{line-height:1.5em}
+.support.document .subtit{line-height:24px}
+.support.document .info-box{margin:35px 0 60px}
+.support.document .info-box p{font-size:14px;line-height:21px}
+.support.document .form-style .hasbtn .input-file-box{width:100% ;margin-right:0;margin-bottom:10px}
+.support.document .form-style  .input-file-box .btn-file{width:73px;font-size:14px}
+.support.document .form-style .btn-print{width:100%}
+.support.document .form-style li{padding-right:0}
+.support.document .btn-area{margin:50px 0 100px}
+/* 두산 꿈나무 */
+.support.multicultural .tit-st + .form-style {margin:45px 0 0}
+.support.multicultural .file-list .title-area{padding-right:0;padding-bottom:90px}
+.support.multicultural .file-list + .btn-area{margin:50px 0}
+/* 고교 */
+.support.award-high-school .tit-st + .form-style {margin:45px 0 0}
+.support.award-high-school .file-list .title-area{padding-right:0;padding-bottom:90px}
+.support.award-high-school .student-list + .btn-area{margin:50px 0 60px}
+/* 대학 */
+.support.award-university .tit-st + .form-style {margin:45px 0 0}
+.support.award-university .file-list .title-area{padding-right:0;padding-bottom:90px}
+.support.award-university .file-list + .btn-area{margin:50px 0}
+.support.confirm.award-university .file-list{margin:63px  0 0}
+
+}
